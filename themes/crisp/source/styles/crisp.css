@@ -27,14 +27,14 @@ html, body {
             color: #444;
             font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
             font-size: 16px;
-            text-shadow: 0 0 1px transparent;
+            text-shadow: 0 0 1px transparent; 
 }
 
 html {
 	height: 100%;
 }
 body {
-	padding: 2em 2.5em 1em 20em;
+	padding: 2em 2.5em 1em 20em;padding-left: 23.5em;
 }
 
 /* Blocks */
@@ -45,7 +45,7 @@ header {
 	top: 0;
 	left: 0;
 	height:100%;
-	width:13.5em;
+	width:16.5em;
 }
 #content {
 	display: block;
@@ -62,12 +62,14 @@ article {
 	padding-bottom: 1.7em;
 }
 p, hr, h4, h5, h6 {
-	margin-top: 0.9em;
-	margin-bottom: 0.9em;
+	margin-bottom: 1.8em;
+margin-top: 1.8em;
+font-size: 1.6em;
+margin-left: 1.6em;
 }
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Bree Serif", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", serif;
+	font-family: "Bree Serif",MingLiU;
 	font-weight: 400 !important;
 }
 h1 {
@@ -116,9 +118,13 @@ strong {
 	font-weight: 700;
 }
 blockquote {
-	border-left: 0.4em solid #eee;
-	padding-left: 1.2em;
-	 font-size: 16px;
+border-width: 0.1em 0.1em 0.1em 0.6em;
+border-style: solid;
+border-color: #C5BBBB;
+font-size: 13px;
+margin-left: 6em;
+margin-right: 28em;
+padding-left: 0.8em;
 }
 hr{
  	border: 0;
@@ -152,8 +158,9 @@ input {
 /* Sidebar */
 header h1 {
 font-size: 40px;
-	margin-top:0.8em;
-	margin-bottom:0.6em;
+	margin-top: 1em;
+margin-bottom: 0.8em;
+margin-left: 1.6em;
 }
 header h1 a {
 	color:#444;
@@ -168,11 +175,14 @@ header #logo img {
 	-moz-border-radius: 4.5em;
 	-webkit-border-radius: 4.5em;
 	border: none;
+	margin-left: 3em;
+margin-top: 2em;
 }
 #follow-icons {
  font-size: 16px;
 	margin-top: -0.7em;
 	margin-bottom: 1.5em;
+	margin-left: 1.6em;
 }
 #follow-icons a {
 	color: #ccc;
@@ -187,7 +197,7 @@ header #logo img {
 	line-height:1.9em;
 }
 header h6 {
-	margin-top:0.5em;
+	margin-top: 5.5em;
 }
 /* Posts */
 article span.post-stamp {
@@ -292,7 +302,12 @@ footer a:hover {
 	}
 }
 
-
+.article-entry p {
+ font-size: 16px;
+}
+.article-entry blockquote {
+ font-size: 13px;
+}
 .article-entry pre,
 .article-entry .highlight {
   background: #2d2d2d;
