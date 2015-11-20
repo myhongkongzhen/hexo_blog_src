@@ -86,6 +86,7 @@ plugins:
 theme: crisp
 #theme: yilia
 #theme: vno
+#theme: styleme
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html

@@ -1,0 +1,28 @@
+# config
+logo: /asset/mizu.jpg
+feed: /atom.xml
+
+# Content
+excerpt_link: Read More #阅读更多的文字显示
+fancybox: true #开启fancybox效果
+
+# Sidebar  #侧边栏设置
+# sidebar: right
+# widgets:
+#   - category
+#   - tag
+#   - tagcloud
+#   - archive
+#   - recent_posts
+
+# Miscellaneous #社交网络和统计连接地址
+google_analytics: #google analytics ID
+favicon: /asset/mizu.jpg #网站的favicon
+google_plus:
+
+ 
+
+
+
+
+

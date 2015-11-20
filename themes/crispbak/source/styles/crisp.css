@@ -23,11 +23,11 @@
 }
 
 html, body {
-	  background: #f6f7f9;
-            color: #444;
-            font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-            font-size: 16px;
-            text-shadow: 0 0 1px transparent;
+	font-size: 1em;
+	line-height: 1.65em;
+	font-family: "Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+	font-weight: 300;
+	color:#444;
 }
 
 html {
@@ -53,7 +53,7 @@ header {
 }
 footer {
 	padding: 1em 0em 2.5em 0em;
-	 font-size: 16px;
+	font-size:0.8em;
 	line-height: 1.5em;
 	color: #888;
 }
@@ -71,19 +71,19 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400 !important;
 }
 h1 {
-	font-size: 40px;
+	font-size: 2.5em;
 	line-height: 1.1em;
 	margin-top: 0.6em;
 	margin-bottom: 0.6em;
 }
 h2 {
-	 font-size: 16px;
+	font-size:1.9em;
 	line-height: 1.2em;
 	margin-top: 0.7em;
 	margin-bottom: 0.7em;	
 }
 h3 {
- font-size: 16px;
+	font-size:1.4em;
 	line-height: 1.3em;
 	margin-top: 0.8em;
 	margin-bottom: 0.8em;	
@@ -118,7 +118,7 @@ strong {
 blockquote {
 	border-left: 0.4em solid #eee;
 	padding-left: 1.2em;
-	 font-size: 16px;
+	font-size: 1.3em;
 }
 hr{
  	border: 0;
@@ -130,11 +130,11 @@ ul, ol {
 }
 code {
 	/*for code highlighting */
- font-size: 16px;
+	font-size:1.4em;
 	background: #eee;
 }
 pre {
-	 font-size: 16px;
+	font-size: 0.8em;
 	line-height: 2em;
 	background: #eee;
 	padding: 1em;
@@ -146,12 +146,12 @@ pre {
 	white-space: pre\9; 
 }
 input {
-	 font-size: 16px;
+	font-size:1em;
 	padding: 0.3em;
 }
 /* Sidebar */
 header h1 {
-font-size: 40px;
+	font-size:1.9em;
 	margin-top:0.8em;
 	margin-bottom:0.6em;
 }
@@ -170,7 +170,7 @@ header #logo img {
 	border: none;
 }
 #follow-icons {
- font-size: 16px;
+	font-size: 0.7em;
 	margin-top: -0.7em;
 	margin-bottom: 1.5em;
 }
@@ -183,7 +183,7 @@ header #logo img {
 	margin-right:-0.15em;
 }
 #follow-icons span .fa-stack-1x {
- font-size: 16px;
+	font-size:1.05em;
 	line-height:1.9em;
 }
 header h6 {
@@ -201,11 +201,11 @@ h3.post-title {
 	margin-top:0.4em;
 	padding-bottom:0.9em;
 	border-bottom: 1px solid #eee;
-	font-size: 26px;
+	font-size: 1.2em;
 	color: #444;
 }
 .post-title .feature-star {
- font-size: 16px;
+	font-size: 0.9em;
 }
 .separator, .taglist, .feature-star {
 	color: #ccc;
@@ -215,7 +215,7 @@ h3.post-title {
 	color:#fff;
 	padding:0.3em 0.6em 0.3em 0.6em;
 	vertical-align:10%;  
-	 font-size: 16px;
+	font-size:0.5em;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 700 !important;
 	text-transform:uppercase;
@@ -250,7 +250,7 @@ footer a:hover {
 /* Large Screens */
 @media only screen and (min-width: 1281px) {
 	html, body {
-	 font-size: 16px;
+		font-size: 1.1em;
 	} 
 }
 /* Small Screens */
@@ -310,7 +310,7 @@ footer a:hover {
 .article-entry .highlight .gutter pre,
 .article-entry .gist .gist-file .gist-data .line-numbers {
   color: #666;
- font-size: 16px;
+  font-size: 0.85em;
 }
 .article-entry pre,
 .article-entry code {
@@ -339,7 +339,7 @@ footer a:hover {
   padding: 0;
 }
 .article-entry .highlight figcaption {
-   font-size: 16px;
+  font-size: 0.85em;
   color: #999;
   line-height: 1em;
   margin-bottom: 1em;
