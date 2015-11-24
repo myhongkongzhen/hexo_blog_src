@@ -1,10 +1,11 @@
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
+   @import "_partial/highlight"
 */
 @import "_animate"
 @import "_variables"
-@import "_partial/highlight"
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -27,9 +28,7 @@ ol, ul {
   list-style: none;
 }
 
-blockquote, q {
-  quotes: none;
-}
+
 
 blockquote:before, blockquote:after {
   content: '';
@@ -94,6 +93,9 @@ a:hover {
   -moz-transition: .5s;
   -webkit-transition: .5s;
 }
+.hljs {
+font-family: "Courier New",MingLiU;
+}
 
 h1,
 h2,
@@ -139,6 +141,7 @@ h5 {
 p {
   margin-bottom: 1.3em;
   line-height: 1.7em;
+  margin-top: 1.6em;
 }
 
 strong {
@@ -147,28 +150,36 @@ strong {
 
 em {
   font-style: italic;
+  font-size: 0.8em;
 }
 
 blockquote {
   margin: 1em 0;
-  padding: 2em 1.25em;
+padding-top: 1em;
+padding-bottom: 1em;
+padding-left: 3em;
   background: #f8f8f8;
   border: 1px solid #eeeeee;
   border-left: 4px solid #999999;
   border-radius: 3px;
-  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: MingLiU,"Courier New","Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
   font-weight: lighter;
-  font-size: 1em;
+  font-size: 0.8em;
   /*text-align: center; */
 }
 
+blockquote, ol {
+ padding-top: 1em;
+}
+blockquote, q {
+  quotes: none;
+  padding-top: 0em;
+}
 blockquote p:last-child {
   margin-bottom: 0;
 }
 
-ol, ul {
-  margin: 0 0 1.3em 2.5em;
-}
+ 
 
 ol li, ul li {
   margin: 0 0 .2em 0;
@@ -242,7 +253,7 @@ pre code {
 
 .excerpt {
   margin: 0;
-  font-size: .9em;
+   
   color: #999999;
 }
 
@@ -284,10 +295,16 @@ pre code {
   margin: 0 auto;
 }
 
+header h1 {
+	font-family: "楷体";
+	font-size: 2.8em;
+}
+
 .content-wrapper {
   z-index: 800;
-  width: 70%;
-  margin-left: 30%;
+  width: 80%;
+  margin-left: 23%;
+font-family: MingLiU,"Courier New","Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
 }
 
 .content-wrapper__inner {
@@ -346,6 +363,7 @@ hr {
 .post-meta {
   margin: 0 0 .4em 0;
   color: #c7c7c7;
+  margin-bottom: 0.8em;
 }
 
 .post-meta__date {
@@ -730,7 +748,7 @@ i {
 .post-list__post-title {
   margin-top: 0;
   margin-bottom: .2em;
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 1.3em;
 }
 
@@ -741,6 +759,8 @@ i {
 .post-list__post-title a:hover {
   color: #7b0f19;
 }
+
+
 
 .post-list__meta {
   display: block;
@@ -1004,6 +1024,7 @@ input[type="tel"]:-ms-input-placeholder {
     width: 80%;
     max-width: none;
     margin: 0 auto;
+    font-family: MingLiU,"Courier New","Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
   }
 
   .content-wrapper__inner {
@@ -1036,3 +1057,57 @@ input[type="tel"]:-ms-input-placeholder {
     margin-bottom: .4em;
   }
 }
+
+
+// 打赏按钮开始
+.donate_bar{
+	text-align: center;
+	margin-top : 5%;
+}
+.donate_bar.hidden{
+	display:none;
+}
+.donate_bar a.btn_donate{
+	display: inline-block;
+	width: 82px;
+	height: 82px;
+	margin-left:auto;
+    margin-right:auto;
+
+	background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat;
+	_background: url("http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif") no-repeat; 
+			
+	-webkit-transition: background 0s;
+	-moz-transition: background 0s;
+	-o-transition: background 0s;
+	-ms-transition: background 0s;
+	transition: background 0s;
+}
+.donate_bar a.btn_donate:hover{ background-position: 0px -82px;}
+.donate_bar .donate_txt {
+	display: block;
+	color: #9d9d9d;
+	font: 14px/2 "Microsoft Yahei";
+}
+.bold{ font-weight: bold; }
+
+// 打赏按钮结束 
+
+
+.taglist {
+ color: #ccc;
+}
+
+.taglist a {
+	background-color:#ccc;
+	color:#fff;
+	padding:0.2em 0.3em;
+ 
+	font-weight: 700 !important;
+	text-transform:uppercase;
+	letter-spacing:0.05em;
+	border-radius:0.25em;
+	-moz-border-radius: 0.25em;
+	-webkit-border-radius: 0.25em;
+}
+

@@ -65,7 +65,7 @@ p, hr, h4, h5, h6 {
 	margin-bottom: 1.8em;
 margin-top: 1.8em;
 font-size: 1.6em;
-margin-left: 1.6em;
+ 
 }
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -160,7 +160,7 @@ header h1 {
 font-size: 40px;
 	margin-top: 1em;
 margin-bottom: 0.8em;
-margin-left: 1.6em;
+ 
 }
 header h1 a {
 	color:#444;
@@ -174,15 +174,14 @@ header #logo img {
 	border-radius:4.5em;
 	-moz-border-radius: 4.5em;
 	-webkit-border-radius: 4.5em;
-	border: none;
-	margin-left: 3em;
+	border: none; 
 margin-top: 2em;
 }
 #follow-icons {
  font-size: 16px;
 	margin-top: -0.7em;
 	margin-bottom: 1.5em;
-	margin-left: 1.6em;
+	 
 }
 #follow-icons a {
 	color: #ccc;
@@ -223,10 +222,8 @@ h3.post-title {
 .taglist a {
 	background-color:#ccc;
 	color:#fff;
-	padding:0.3em 0.6em 0.3em 0.6em;
-	vertical-align:10%;  
-	 font-size: 16px;
-	font-family: "Open Sans", sans-serif;
+	padding:0.2em 0.3em;
+ 
 	font-weight: 700 !important;
 	text-transform:uppercase;
 	letter-spacing:0.05em;

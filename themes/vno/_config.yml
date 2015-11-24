@@ -1,27 +1,39 @@
 menu:
-  #Archives: /archives
-  项目作品: /projects
-  关于我: /aboutme
+  Archives: /archives
+  #tags: /tags
+  About: /about
 rss: /atom.xml
-description: 爱好电影、音乐和书籍，尤其喜爱许巍、李健及王小波。擅长Java，JavaScript，喜欢用NodeJs编写一些有趣的应用。关注互联网、科技、敏捷开发以及JavaNIO。
+description: JAVA、C、C++ 技術、生活感悟
 social:
-  weibo: 
-  github: https://github.com/lenbo-ma
+  weibo: http://www.weibo.com/myhongkongzhen
+  github: https://github.com/myhongkongzhen
   stack_overflow: 
-  facebook: http://www.facebook.com/yang.desheng.me
-  twitter: https://twitter.com/lenbo_
-  google_plus: https://www.google.com/+LenboMa
+  facebook: http://www.facebook.com/myhongkongzhen
+  twitter: https://twitter.com/#!/Z_ZW
+  google_plus: https://www.google.com/+myhongkongzhen
 
 page_comment: false
 logo: /images/logo2.jpg
 background:
   cover: /images/background-cover.jpg
-  color: cover-blue
+  color: cover-purple 
 
-archive_date_format: MMM DD
+archive_date_format: MMM D YYYY
 fancybox: true
 
-duoshuo_shortname: 
+duoshuo_shortname: Z_Z.W
 
-google_analytics: UA-42596364-1
-favicon: /images/favicon.png
+google_analytics: 
+favicon: /images/favicon-20151123105952356.ico
+
+
+highlight: 
+ enable: true
+ line_number: true 
+ tab_replace: 
+
+#donate: 
+#  enable: true
+#  text: Enjoy it ? Donate me !  欣赏此文？求鼓励，求支持！
+#  alipay: http://static.ixirong.com/pic/donate/alipay1.webp
+#  wechat: http://static.ixirong.com/pic/donate/wechat.png

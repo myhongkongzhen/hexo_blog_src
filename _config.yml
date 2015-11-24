@@ -7,7 +7,7 @@ title: Z_Z.W
 subtitle: あなたがいる 、それだけでも 
 description: JAVA、C、C++ 技術、生活感悟 
 author:  Z_Z.W
-language: #zh_TW
+language: en #zh_TW
 timezone:
 email: myhongkongzhen@gmail.com
 
@@ -67,7 +67,7 @@ disqus_shortname: Z_Z.W#disqus的用户名称
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: MMM D YYYY
 time_format: HH:mm:ss
 
 # Pagination
@@ -83,9 +83,9 @@ plugins:
 - hexo-generator-sitemap
 
 ## Themes: http://hexo.io/themes/
-theme: crisp
+#theme: crisp
 #theme: yilia
-#theme: vno
+theme: vno
 #theme: styleme
 
 # Deployment
