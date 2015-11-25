@@ -10,6 +10,7 @@ tags:
     集合框架API DOC簡介英文翻譯練習。
 
  
+   
     ※ 注：此翻譯僅僅為個人學習JDK文檔及補習英文所做，如果您希望看到更加準確的翻譯，請自行搜尋中文文檔
           因翻譯水平不足為您帶來的不便請諒解.
 <!--more-->  
@@ -113,8 +114,8 @@ The collections framework consists of:<br>
     集合接口被分為兩組.<br>
     The most basic interface, java.util.Collection, has the following descendants:<br>
     最基礎的接口,java.util.Collection,包含了以下子節點:<br>
-   
-   
+    
+```java
     java.util.Set
     java.util.SortedSet
     java.util.NavigableSet
@@ -123,8 +124,8 @@ The collections framework consists of:<br>
     java.util.concurrent.TransferQueue
     java.util.Deque
     java.util.concurrent.BlockingDeque
-   
-   
+```
+
   - The other collection interfaces are based on java.util.Map and are not true collections.<br>
     另外的集合接口以 java.util.Map 為基礎並不是一個真實的集合.<br>
     However, these interfaces contain collection-view operations,<br> 
@@ -134,13 +135,13 @@ The collections framework consists of:<br>
     Map has the following offspring:<br>
     Map有以下子節點:
     
-   
+```java
     java.util.SortedMap
     java.util.NavigableMap
     java.util.concurrent.ConcurrentMap
     java.util.concurrent.ConcurrentNavigableMap
-   
-   
+```
+
   - Many of the modification methods in the collection interfaces are labeled optional. <br>
     在集合接口中許多修改的方法被標記為可選的.<br>
     Implementations are permitted to not perform one or more of these operations,<br>
@@ -200,15 +201,13 @@ The collections framework consists of:<br>
     實現了集合接口的類在表格中有特色名稱.<br>
     The general purpose implementations are summarized in the following table:<br>
     一般用途的實現總結如下表格:
-    
-   
-<table>
-<tr> <td> Interface </td> <td> Hash Table </td> <td> Resizable Array </td> <td> Balanced Tree </td> <td> Linked List </td> <td> Hash Table + Linked List </td> </tr>
-<tr> <td> Set </td> <td> HashSet </td> <td> </td> <td> TreeSet </td> <td> </td> <td> LinkedHashSet </td> </tr> <tr> <td> List </td> <td> </td> <td> ArrayList </td> <td> </td> <td> LinkedList </td> <td> </td> </tr>
-<tr> <td> Deque </td> <td> </td> <td> ArrayDeque </td> <td> </td> <td> LinkedList </td> <td> </td> </tr> <tr> <td> Map </td> <td> HashMap </td> <td> </td> <td> TreeMap </td> <td> </td> <td> LinkedHashMap </td> </tr>
-</table>
-   
-   
+
+    <table>
+        <tr> <td> Interface </td> <td> Hash Table </td> <td> Resizable Array </td> <td> Balanced Tree </td> <td> Linked List </td> <td> Hash Table + Linked List </td> </tr>
+    	<tr> <td> Set </td> <td> HashSet </td> <td> </td> <td> TreeSet </td> <td> </td> <td> LinkedHashSet </td> </tr> <tr> <td> List </td> <td> </td> <td> ArrayList </td> <td> </td> <td> LinkedList </td> <td> </td> </tr>
+    	<tr> <td> Deque </td> <td> </td> <td> ArrayDeque </td> <td> </td> <td> LinkedList </td> <td> </td> </tr> <tr> <td> Map </td> <td> HashMap </td> <td> </td> <td> TreeMap </td> <td> </td> <td> LinkedHashMap </td> </tr>
+    </table>
+
   - The general-purpose implementations support all of the optional operations in the collection interfaces<br>
     一般用途的實現支持所有在集合接口中的任意操作<br>
     and have no restrictions on the elements they may contain.<br>
@@ -233,4 +232,48 @@ The collections framework consists of:<br>
     given the performance of the basic operations of a specific implementation.<br>
     給性能一個基本的的操作基於特定的實現.
 
- 
+## Concurrent Collections
+
+  - Applications that use collections from more than one thread must be carefully programmed.<br> 
+    應用多餘一條線程的應用程序必須被小心的編寫.<br>
+    In general, this is known as concurrent programming.<br>
+    通常,這是被了解的作為並發編程.<br>
+    The Java platform includes extensive support for concurrent programming.<br>
+    JAVA平台包含應用於支持並發編程的擴展.<br>
+    See Java Concurrency Utilities for details.<br>
+    細節請查看JAVA並發工具.<br>
+
+  - Collections are so frequently used that various concurrent friendly interfaces and implementations of collections are included in the APIs.<br>
+    集合被如此頻繁的用於友好的接口及集合的實現包含其中的多變的並發中.<br>
+    These types go beyond the synchronization wrappers discussed previously to provide features that are frequently needed in concurrent programming.<br>
+    這些類型超出先前討論的提供給將來的頻繁應用於並發編程的同步封裝.<br>
+    These concurrent-aware interfaces are available:<br>
+    這些並發知識是可以獲取的:<br>
+
+     * BlockingQueue
+     * TransferQueue
+     * BlockingDeque
+     * ConcurrentMap
+     * ConcurrentNavigableMap
+
+  - The following concurrent-aware implementation classes are available.<br>
+    包含並發知識的實現類是可獲取的.<br>
+    See the API documentation for the correct usage of these implementations.<br>
+    針對於正確使用這些實現請查看API文檔.<br>
+
+     * LinkedBlockingQueue
+     * ArrayBlockingQueue
+     * PriorityBlockingQueue
+     * DelayQueue
+     * SynchronousQueue
+     * LinkedBlockingDeque
+     * LinkedTransferQueue
+     * CopyOnWriteArrayList
+     * CopyOnWriteArraySet
+     * ConcurrentSkipListSet
+     * ConcurrentHashMap
+     * ConcurrentSkipListMap
+     
+     
+     
+     
