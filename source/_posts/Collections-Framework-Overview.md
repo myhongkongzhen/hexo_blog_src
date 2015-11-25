@@ -9,6 +9,7 @@ tags:
     
     集合框架API DOC簡介英文翻譯練習。
 
+ 
     ※ 注：此翻譯僅僅為個人學習JDK文檔及補習英文所做，如果您希望看到更加準確的翻譯，請自行搜尋中文文檔
           因翻譯水平不足為您帶來的不便請諒解.
 <!--more-->  
@@ -112,8 +113,8 @@ The collections framework consists of:<br>
     集合接口被分為兩組.<br>
     The most basic interface, java.util.Collection, has the following descendants:<br>
     最基礎的接口,java.util.Collection,包含了以下子節點:<br>
-    
-    
+   
+   
     java.util.Set
     java.util.SortedSet
     java.util.NavigableSet
@@ -122,8 +123,8 @@ The collections framework consists of:<br>
     java.util.concurrent.TransferQueue
     java.util.Deque
     java.util.concurrent.BlockingDeque
-    
-
+   
+   
   - The other collection interfaces are based on java.util.Map and are not true collections.<br>
     另外的集合接口以 java.util.Map 為基礎並不是一個真實的集合.<br>
     However, these interfaces contain collection-view operations,<br> 
@@ -133,13 +134,13 @@ The collections framework consists of:<br>
     Map has the following offspring:<br>
     Map有以下子節點:
     
-    
+   
     java.util.SortedMap
     java.util.NavigableMap
     java.util.concurrent.ConcurrentMap
     java.util.concurrent.ConcurrentNavigableMap
-    
-    
+   
+   
   - Many of the modification methods in the collection interfaces are labeled optional. <br>
     在集合接口中許多修改的方法被標記為可選的.<br>
     Implementations are permitted to not perform one or more of these operations,<br>
@@ -193,29 +194,43 @@ The collections framework consists of:<br>
     Some restricted collections permit this usage.<br>
     一些受限的集合允許這樣的使用.
 
-
 ## Collection Implementations
 
-  - Classes that implement the collection interfaces typically have names in the form of <Implementation-style><Interface>. 
-    The general purpose implementations are summarized in the following table:
-
+  - Classes that implement the collection interfaces typically have names in the form of <Implementation-style><Interface>.<br>
+    實現了集合接口的類在表格中有特色名稱.<br>
+    The general purpose implementations are summarized in the following table:<br>
+    一般用途的實現總結如下表格:
     
-    Interface 	Hash Table 	  Resizable Array 	Balanced Tree 	Linked List 	Hash Table + Linked List
-    Set 	    HashSet 	  	                TreeSet 	  	                LinkedHashSet
-    List 	  	              ArrayList 	  	                LinkedList 	 
-    Deque 	  	              ArrayDeque 	  	                LinkedList 	 
-    Map 	    HashMap 	  	                TreeMap 	  	                LinkedHashMap
-    
-
-  - The general-purpose implementations support all of the optional operations in the collection interfaces and have no restrictions on the elements they may contain.
-    They are unsynchronized,
-    but the Collections class contains static factories called synchronization wrappers that can be used to add synchronization to many unsynchronized collections. 
-    All of the new implementations have fail-fast iterators,
-    which detect invalid concurrent modification, and fail quickly and cleanly (rather than behaving erratically).
-
-  - The AbstractCollection, AbstractSet, AbstractList, 
-    AbstractSequentialList and AbstractMap classes provide basic implementations of the core collection interfaces,
-    to minimize the effort required to implement them.
-    The API documentation for these classes describes precisely how each method is implemented so the implementer knows which methods must be overridden,
-    given the performance of the basic operations of a specific implementation.
    
+<table>
+<tr> <td> Interface </td> <td> Hash Table </td> <td> Resizable Array </td> <td> Balanced Tree </td> <td> Linked List </td> <td> Hash Table + Linked List </td> </tr>
+<tr> <td> Set </td> <td> HashSet </td> <td> </td> <td> TreeSet </td> <td> </td> <td> LinkedHashSet </td> </tr> <tr> <td> List </td> <td> </td> <td> ArrayList </td> <td> </td> <td> LinkedList </td> <td> </td> </tr>
+<tr> <td> Deque </td> <td> </td> <td> ArrayDeque </td> <td> </td> <td> LinkedList </td> <td> </td> </tr> <tr> <td> Map </td> <td> HashMap </td> <td> </td> <td> TreeMap </td> <td> </td> <td> LinkedHashMap </td> </tr>
+</table>
+   
+   
+  - The general-purpose implementations support all of the optional operations in the collection interfaces<br>
+    一般用途的實現支持所有在集合接口中的任意操作<br>
+    and have no restrictions on the elements they may contain.<br>
+    並且在他們所包含的元素中沒有限制條件.<br>
+    They are unsynchronized,
+    他們是非同步化的,<br>
+    but the Collections class contains static factories called synchronization wrappers that can be used to add synchronization to many unsynchronized collections.<br> 
+    但是集合類包含靜態的因子被同步封裝的能夠備用於添加同步化為許多非同步的集合.<br>
+    ***All of the new implementations have fail-fast iterators***,<br>
+    所有新的實現都包含fail-fast迭代器,<br>
+    which detect invalid concurrent modification, and fail quickly and cleanly (rather than behaving erratically).<br>
+    監視無效的並發修改,快速失敗以及清除(而不是不規律的表現)    
+
+  - The AbstractCollection, AbstractSet, AbstractList, AbstractSequentialList and AbstractMap classes<br> 
+    抽象的 AbstractCollection, AbstractSet, AbstractList, AbstractSequentialList 以及 AbstractMap 類<br>
+    provide basic implementations of the core collection interfaces,<br>
+    准許基本的核心接口的實現,<br>
+    to minimize the effort required to implement them.<br>
+    最小化必須實現他們的精力.<br> 
+    The API documentation for these classes describes precisely how each method is implemented so the implementer knows which methods must be overridden,<br>
+    API文檔對於這些類精準的描述了每一個方法是如何被實現的如實現者知道哪個方法必須被複寫,<br>
+    given the performance of the basic operations of a specific implementation.<br>
+    給性能一個基本的的操作基於特定的實現.
+
+ 
