@@ -194,5 +194,28 @@ The collections framework consists of:<br>
     一些受限的集合允許這樣的使用.
 
 
- 
+## Collection Implementations
+
+  - Classes that implement the collection interfaces typically have names in the form of <Implementation-style><Interface>. 
+    The general purpose implementations are summarized in the following table:
+
+    
+    Interface 	Hash Table 	  Resizable Array 	Balanced Tree 	Linked List 	Hash Table + Linked List
+    Set 	    HashSet 	  	                TreeSet 	  	                LinkedHashSet
+    List 	  	              ArrayList 	  	                LinkedList 	 
+    Deque 	  	              ArrayDeque 	  	                LinkedList 	 
+    Map 	    HashMap 	  	                TreeMap 	  	                LinkedHashMap
+    
+
+  - The general-purpose implementations support all of the optional operations in the collection interfaces and have no restrictions on the elements they may contain.
+    They are unsynchronized,
+    but the Collections class contains static factories called synchronization wrappers that can be used to add synchronization to many unsynchronized collections. 
+    All of the new implementations have fail-fast iterators,
+    which detect invalid concurrent modification, and fail quickly and cleanly (rather than behaving erratically).
+
+  - The AbstractCollection, AbstractSet, AbstractList, 
+    AbstractSequentialList and AbstractMap classes provide basic implementations of the core collection interfaces,
+    to minimize the effort required to implement them.
+    The API documentation for these classes describes precisely how each method is implemented so the implementer knows which methods must be overridden,
+    given the performance of the basic operations of a specific implementation.
    
