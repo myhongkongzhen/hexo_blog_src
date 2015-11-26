@@ -7,7 +7,7 @@ title: Z_Z.W
 subtitle: あなたがいる 、それだけでも 
 description: JAVA、C、C++ 技術、生活感悟 
 author:  Z_Z.W
-language: en #zh_TW
+language: en #zh_TW zh-hk/zh-tw
 timezone:
 email: myhongkongzhen@gmail.com
 
@@ -85,7 +85,8 @@ plugins:
 ## Themes: http://hexo.io/themes/
 #theme: crisp
 #theme: yilia
-theme: vno
+#theme: vno
+theme: next
 #theme: styleme
 
 # Deployment
