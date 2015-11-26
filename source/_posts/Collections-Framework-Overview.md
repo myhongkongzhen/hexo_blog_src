@@ -271,7 +271,7 @@ tags:
   因此,這個框架包含的放阿飛能夠使得集合被移入數組,
   arrays to be viewed as collections, and maps to be viewed as collections. 
   數組能夠備看做為集合,以及Map可以被看作為集合.
-     
-     
-     
+  
+# 官方API頁面截圖:
 
+<img src="/images/2015-11-26_173951.png"  />
