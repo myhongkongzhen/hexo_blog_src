@@ -8,7 +8,7 @@ tags:
 > 簡介：Collections Framework. JDK1.7 集合框架系統學習 (一) 概覽
 > 集合框架API DOC簡介英文翻譯練習。
 > ※ 注：此翻譯僅僅為個人學習JDK文檔及補習英文所做，如果您希望看到更加準確的翻譯，請自行搜尋中文文檔
->       因翻譯水平不足為您帶來的不便請諒解.
+>       因英文水平不足為您帶來的不便請諒解.
 
 <!--more-->  
 
@@ -234,7 +234,44 @@ tags:
      * ConcurrentSkipListSet
      * ConcurrentHashMap
      * ConcurrentSkipListMap
+## Design Goals
+- The main design goal was to produce an API that was small in size and, more importantly, in "conceptual weight".
+  主要的公共設計是創建一個在大小上更小的,在概念重要性上更重要的API.
+  It was critical that the new functionality not seem too different to current Java programmers;
+  他是重要的在新的功能上是的當前JAVA開發人員開起來不是太難;
+  it had to augment current facilities, rather than replace them. 
+  他增加當前的條件,而不是替換他們.
+  At the same time, the new API had to be powerful enough to provide all the advantages described previously.
+  與此同時,新的API使得所有以前的有益的描述更加的給力.
+    
+- To keep the number of core interfaces small,
+  保持大量的核心小接口,
+  the interfaces do not attempt to capture such subtle distinctions as mutability, modifiability, and resizability.
+  這些接口不能嘗試捕獲諸如異變的,可編輯的以及真實的細小的描述,
+  Instead, certain calls in the core interfaces are optional,
+  與之替換的,確保呼叫核心接口是可選的,
+  enabling implementations to throw an UnsupportedOperationException to indicate that they do not support a specified optional operation.
+  授權實現拋出UnsupportedOperationException異常來表明他們不能支持一個特定的可選的操作.
+  Collection implementers must clearly document which optional operations are supported by an implementation.
+  集合實現必須明確文檔表名可選的操作是被支持于一個實現的.
+    
+- To keep the number of methods in each core interface small, an interface contains a method only if either:
+  保持大量的方法在每一個核心的小接口內,一個接口包含一個方法當且僅當:
+    
+  * It is a truly fundamental operation: a basic operations in terms of which others could be reasonably defined,
+    他是一個真實的基本操作:一組其他的可被作為結果定義的一個基礎的操作
+  * There is a compelling performance reason why an important implementation would want to override it.
+    一個強制的平台原因一個重要的實現想要複寫他
+    
+- It was critical that all reasonable representations of collections interoperate well.
+  他是起決定性作用的在所有合理的集合很好交互的代表中.
+  This included arrays, which cannot be made to implement the Collection interface directly without changing the language.
+  這個包含不能實現集合接口確保不能改變語言的數組.
+  Thus, the framework includes methods to enable collections to be moved into arrays,
+  因此,這個框架包含的放阿飛能夠使得集合被移入數組,
+  arrays to be viewed as collections, and maps to be viewed as collections. 
+  數組能夠備看做為集合,以及Map可以被看作為集合.
      
      
      
-     
+
