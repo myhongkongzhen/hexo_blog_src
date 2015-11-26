@@ -3,17 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Z_Z.W
-subtitle: あなたがいる 、それだけでも
-description: JAVA、C、C++ 技術、生活感悟
-author: Z_Z.W
-language: en #zh_TW zh-hk/zh-tw
+title: Hexo
+subtitle:
+description:
+author: John Doe
+language:
 timezone:
-email: myhongkongzhen@gmail.com
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://myhongkongzhen.github.io/
+url: http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -53,7 +52,7 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: MMM D YYYY
+date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
 # Pagination
@@ -64,21 +63,9 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-#theme: landscape
-#theme: crisp
-#theme: yilia
-#theme: vno
-#theme: minos
-#theme: yelee
-#theme: huno
-theme: next
-#theme: styleme
+theme: landscape
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-    type: git
-    repository: git@github.com:myhongkongzhen/myhongkongzhen.github.io.git
-    branch: master
-
-baidu_analytics: a53f74323c99608e344f6cc77c434d62
+  type:
