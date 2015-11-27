@@ -16,7 +16,7 @@ fancybox: true #开启fancybox效果
 #   - recent_posts
 
 # Miscellaneous #社交网络和统计连接地址
-google_analytics: #google analytics ID
+google_analytics: UA-70751910-1
 favicon: /asset/mizu.jpg #网站的favicon
 google_plus:
 
