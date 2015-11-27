@@ -165,6 +165,35 @@
     <footer class="post-footer">
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
+
+        <div class="copyright_init">
+          <p><span>本文标题:</span><a href="{{ url_for(post.path) }}">{{ post.title or post.link }}</a></p>
+          <p><span>文章作者:</span><a href="/" title="访问 <%=theme.author%> 的个人博客">{{ theme.author }}</a></p>
+          <p><span>发布时间:</span>{{ post.date.format("HH:mm MMM DD YYYY") }}</p>
+          <p><span>最后更新:</span>{{ post.updated.format("HH:mm MMM DD YYYY") }}</p>
+          <p>
+            <span>原始链接:</span><a href="{{ url_for(post.path) }}" title="{{ post.title or post.path }}">{{ url_for(post.path) }}</a>
+            <span class="btn_init" data-clipboard-text="原文: {{ url_for(post.path) }}　　作者: {{ theme.author }}" title="点击复制文章链接">
+                <i class="fa fa-clipboard"></i>
+            </span>
+          </p>
+          <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。</p>
+          <script src="/js/clipboard.min.js"></script>
+          <script> var clipboard = new Clipboard('.btn_init'); </script>
+        </div>
+        <style type="text/css">
+          .copyright_init p .btn_init {
+            margin-left: 1em;
+          }
+          .copyright_init:hover p .btn_init::after {
+            content: "复制"
+          }
+          .copyright_init p .btn_init:hover {
+              color: gray;
+              cursor: pointer;
+            };
+        </style>
+
           {% for tag in post.tags %}
             <a href="{{ url_for(tag.path) }}" rel="tag">#{{ tag.name }}</a>
           {% endfor %}

@@ -214,7 +214,7 @@ facebook_sdk:
 #! UNLESS YOU KNOW WHAT YOU ARE DOING
 #! ---------------------------------------------------------------
 
-# Motion
+# Motion 设置为 false 就可以禁用掉全站的动态效果。
 use_motion: true
 
 # Fancybox

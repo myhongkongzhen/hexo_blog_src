@@ -16,5 +16,3 @@ tags:
 > 3. [struts2得到request對象](http://myhongkongzhen.iteye.com/blog/554579) 
 
 發現工作六七年了，像樣子的技術博文真是少的可憐，GitHub也是剛剛開始使用，並在此上建立了新博客通道，希望以後能回歸初心吧。
-
-<br><br><br><br>

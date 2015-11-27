@@ -1,7 +1,5 @@
 // CSS Style Guide: http://codeguide.co/#css
 
-
-
 $scheme    = hexo-config('scheme') ? hexo-config('scheme') : 'default';
 $variables = base $scheme custom;
 $mixins    = base $scheme custom;
@@ -85,3 +83,38 @@ for $mixin in $mixins
 // Custom Layer
 // --------------------------------------------------
 @import "_custom/custom";
+
+
+
+.copyright_init {
+  width: 85%;
+  margin: 4em auto;
+  max-width: 56em;
+  word-break: break-all;
+  font-size: 12px;
+  background: rgba(255, 255, 255, .4)
+  border: 1px solid lightgray;
+  padding: 1em;
+
+  span {
+    color: #B5B5B5;
+    font-weight: bold;
+    margin-right: 1em;
+  }
+  a {
+    color: gray;
+    &:hover {
+      font-weight: bold;
+      color: #EC7B28;
+      text-decoration: underline;
+    }
+  }
+  fa-creative-commons:before {
+    content: "\f25e";
+  }
+}
+
+.copyright_init p {
+  margin: 0px;
+  margin-left: 1.8em;
+};
