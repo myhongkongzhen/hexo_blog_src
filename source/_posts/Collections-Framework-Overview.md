@@ -272,6 +272,6 @@ tags:
   arrays to be viewed as collections, and maps to be viewed as collections. 
   數組能夠備看做為集合,以及Map可以被看作為集合.
   
-# 官方API頁面截圖:
+# [官方API頁面](http://docs.oracle.com/javase/7/docs/technotes/guides/collections/overview.html)截圖:
 
 <img src="/images/2015-11-26_173951.png"  />
