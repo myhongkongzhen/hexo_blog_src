@@ -288,6 +288,118 @@ tags:
     **ConcurrentSkipListSet** - NavigableSet接口中的滑過list接口.
   - **ConcurrentSkipListMap** - Skips list implementation of the ConcurrentNavigableMap interface.
     **ConcurrentSkipListMap** - ConcurrentNavigableMap接口中的滑過list接口
+    
+#### **Abstract implementations** - Skeletal implementations of the collection interfaces to facilitate custom implementations.
+  **抽象的實現** - 集合接口的實現骨架方便自定義的實現.
+    
+  - **AbstractCollection** - Skeletal Collection implementation that is neither a set nor a list (such as a "bag" or multiset).
+    **AbstractCollection** - 集合實現的骨架既不是一個set也不是一個list(例如一個"bag"或者多重集合).
+  - **AbstractSet** - Skeletal Set implementation.
+    **AbstractSet** - Set實現的骨架.
+  - **AbstractList** - Skeletal List implementation backed by a random access data store (such as an array).
+    **AbstractList** - 支持隨機存儲訪問數據倉庫的List實現的骨架(例如一個array).
+  - **AbstractSequentialList** - Skeletal List implementation backed by a sequential access data store (such as a linked list).
+    **AbstractSequentialList** - 支持序列存儲訪問數據倉庫的List實現骨架(例如一個linked list).
+  - **AbstractQueue** - Skeletal Queue implementation.
+    **AbstractQueue** - Queue實現的骨架.
+  - **AbstractMap** - Skeletal Map implementation.
+    **AbstractMap** - Map實現的骨架.
+
+#### **Algorithms** - The Collections class contains these useful static methods.
+  **算法** - Collections類包含一些有用的靜態方法.
+
+  - **sort(List)** - Sorts a list using a merge sort algorithm,
+    **sort(List)** - 使用合併排序算法排序一個list,
+    which provides average case performance comparable to a high quality quicksort,
+    提供一個平均水平下的堪比高性能快速排序的性能,
+    guaranteed O(n*log n) performance (unlike quicksort),
+    保證O(n*log n)性能(不像快速排序),
+    and stability (unlike quicksort).
+    和穩定性(不像快排).
+    A stable sort is one that does not reorder equal elements.
+    一個穩定的排序是不會重複排列相同元素的.
+  - **binarySearch(List, Object)** - Searches for an element in an ordered list using the binary search algorithm.
+    **binarySearch(List, Object)** - 使用二分法查找算法在一個已排序的list中查找一個元素.
+  - **reverse(List)** - Reverses the order of the elements in a list.
+    **reverse(List)** - 在一個list中反轉元素的順序.
+  - **shuffle(List)** - Randomly changes the order of the elements in a list.
+    **shuffle(List)** - 在一個list中隨意的改變元素的順序.
+  - **fill(List, Object)** - Overwrites every element in a list with the specified value.
+    **fill(List, Object)** - 使用特定的值重寫在list中的每一個元素.
+  - **copy(List dest, List src)** - Copies the source list into the destination list.
+    **copy(List dest, List src)** - 拷貝源list到目標list中.
+  - **min(Collection)** - Returns the minimum element in a collection.
+    **min(Collection)** - 返回一個集合中最小的元素.
+  - **max(Collection)** - Returns the maximum element in a collection.
+    **max(collection)** - 返回一個集合中最大的元素.
+  - **rotate(List list, int distance)** - Rotates all of the elements in the list by the specified distance.
+    **rotate(List list, int distance)** - 按照指定的距離來旋轉集合中所有的元素.
+  - **replaceAll(List list, Object oldVal, Object newVal)** - Replaces all occurrences of one specified value with another.
+    **replaceAll(List list, Object oldVal, oldVal newVal)** - 用另一個值替換所有發現的特定的值.
+  - **indexOfSubList(List source, List target)** - Returns the index of the first sublist of source that is equal to target.
+    **indexOfSubList(List source, List target)** - 返回等於目標列表的源list中的第一個list子列表索引.
+  - **lastIndexOfSubList(List source, List target)** - Returns the index of the last sublist of source that is equal to target.
+    **lastIndexOfSubList(List source, List target)** - 返回等於目標列表的源list中的最後一個子列表的索引.
+  - **swap(List, int, int)** - Swaps the elements at the specified positions in the specified list.
+    **swap(List, int, int)** - 在指定的list中交換指定位置的的元素.
+  - **frequency(Collection, Object)** - Counts the number of times the specified element occurs in the specified collection.
+    **frequency(collection, Object)** - 計數在指定集合中指定元素出現的次數.
+  - **disjoint(Collection, Collection)** - Determines whether two collections are disjoint, in other words, whether they contain no elements in common.
+    **disjoint(Collection)** - 判斷兩個結合是否是不相交的,換句話說,他們是否包含元素的不同之處.
+  - **addAll(Collection<? super T>, T...)** - Adds all of the elements in the specified array to the specified collection.
+    **addAll(collection<? super T>, T...)** - 將指定的數組中的所有元素添加至指定的集合.
+
+#### **Infrastructure**
+  **基礎結構**
+  
+  - **Iterators** - Similar to the familiar Enumeration interface, but more powerful, and with improved method names.
+    **迭代器** - 與熟悉的Enumeration接口類型,但更加有力,改良方法名.
+     - **Iterator** - In addition to the functionality of the Enumeration interface,
+       **Iterator** - 在Enumeration接口添加功能,
+       enables the user to remove elements from the backing collection with well-defined, useful semantics.
+       是的用戶可以支持在更好的定義,有用的語意上移除元素.
+     - **ListIterator** - Iterator for use with lists. In addition to the functionality of the Iterator interface,
+       **ListIterator** - 對於list有用的迭代器.在Iterator接口中添加功能,
+       supports bidirectional iteration, element replacement, element insertion, and index retrieval.
+       支持雙向的迭代,元素的替換,元素的添加以及索引的檢索.
+  - **Ordering**
+    **排序**
+     - **Comparable** - Imparts a natural ordering to classes that implement it.
+       **Comparable** - 實現這個接口,可以使得classes按照自然排序.
+       The natural ordering can be used to sort a list or maintain order in a sorted set or map.
+       自然排序可以用於排序一個list或者維護一個已排序的set或者map.
+       Many classes were retrofitted to implement this interface.
+       許多類都已經改造為實現這個接口.
+     - **Comparator** - Represents an order relation,
+       **Comparator** - 代表一個排序關係,
+       which can be used to sort a list or maintain order in a sorted set or map.
+       可以用於排序一個list或者維護一個已排序的set或者map.
+       Can override a type's natural ordering or order objects of a type that does not implement the Comparable interface.
+       用於複寫一個類型的自然排序或者排序那些不能實現Comparable接口的類型的對象.
+  - **Runtime exceptions**
+    **運行時遺產**
+     - **UnsupportedOperationException** - Thrown by collections if an unsupported optional operation is called.
+       **UnsupportedOperationException** - 如果使用了一個不支持的可選操作會有集合拋出異常.
+     - **ConcurrentModificationException** - Thrown by iterators and list iterators 
+       **ConcurrentModificationException** - 迭代器和list的迭代器會拋出異常, 
+       if the backing collection is changed unexpectedly while the iteration is in progress.
+       當迭代過程中支持的集合發生了意外的改變. 
+       Also thrown by sublist views of lists if the backing list is changed unexpectedly.
+       同樣支持的list發生了意外的改變,list的自列表視圖也會拋出異常. 
+  - **Performance**
+    **執行**
+     - **RandomAccess** - Marker interface that lets List implementations indicate that they support fast (generally constant time) random access.
+       **隨機存儲訪問** - 標記接口,使得列表實現支持快速的隨機存儲訪問(一般恆定的時間).
+       This lets generic algorithms change their behavior to provide good performance when applied to either random or sequential access lists.
+       這使得通用的算法改變了他們的表現,無論應用使用隨機或是序列的存儲訪問list,都提供了很好的性能. 
+       
+#### **Array Utilities**
+  **數組工具**
+
+  - **Arrays** - Contains static methods to sort, search, compare, hash, copy, resize, convert to String, and fill arrays of primitives and objects.
+    **Arrays** - 包含了靜態的方法:sort,search,compare,hash,copy,resize,轉換成字符串以及填充數組的基本類型與對象.
+
+
 
 
 
