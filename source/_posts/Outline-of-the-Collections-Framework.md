@@ -7,6 +7,7 @@ tags:
 ---
 > 簡介：Collections Framework. JDK1.7 集合框架系統學習 (二) 概述 
 > 集合框架API DOC簡介英文翻譯練習。
+> 相關源碼分析及詳細api文檔移路→[Collection接口https://github.com/myhongkongzhen/pro-study-jdk/](https://github.com/myhongkongzhen/pro-study-jdk/tree/master/src/main/java/z/z/w/jdk/collections)
 > ※ 注：此翻譯僅僅為個人學習JDK文檔及補習英文所做，如果您希望看到更加準確的翻譯，請自行搜尋中文文檔
 >       因英文水平不足為您帶來的不便請諒解.
 

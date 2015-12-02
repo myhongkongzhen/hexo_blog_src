@@ -7,6 +7,7 @@ tags:
 
 > 簡介：JDK 1.7 英文版 架構圖總覽
 > 今天開始系統學習JDK 1.7 API，使用文檔為ORACLE官方英文文檔
+> 相關源碼分析及詳細api文檔移路→[JDK 1.7 SRC https://github.com/myhongkongzhen/pro-study-jdk/](https://github.com/myhongkongzhen/pro-study-jdk/)
 
 <!--more-->  
 
