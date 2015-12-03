@@ -11,3 +11,7 @@ tags:
 <!--more-->  
 
 #### List接口分析
+
+> List接口包含方法:
+
+<img src="/images/Collection-List.png"  />
