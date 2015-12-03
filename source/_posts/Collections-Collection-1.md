@@ -1,4 +1,4 @@
-title: Collections -- Collection 詳解 -- (四) 
+title: Collections -- Collection -- (四) 
 date: 2015-12-01 14:46:35
 tags: 
 - JAVA
@@ -38,6 +38,6 @@ boolean removeAll( Collection<?> c ); //將集合中的所有與指定集合匹�
 boolean retainAll( Collection<?> c ); //將當前集合中所有不含在指定集合中的元素移出
 void clear(); //清空集合，empty
 // Comparison and hashing
-boolean equals( Object o );
-int hashCode();
+boolean equals( Object o ); //判斷指定對象與這個集合是否相等
+int hashCode(); // 返回一個集合的hashcode值,c1.equals(c2),意味著c1.hashCode() == c2.hashCode().
 ```

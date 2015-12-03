@@ -151,7 +151,7 @@ auto_excerpt:
   length: 150
 
 # Use Lato font
-use_font_lato: true
+use_font_lato: false
 
 
 
