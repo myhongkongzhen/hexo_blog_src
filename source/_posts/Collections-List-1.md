@@ -15,3 +15,15 @@ tags:
 > List接口包含方法:
 
 <img src="/images/Collection-List.png"  />
+
+```
+boolean contains(Object o); // (o == null ? e == null : o.equals(e)) ***(NullPointerException)if the specified element is null and this list does not permit null elements
+Object[] toArray(); //(in proper sequence). In other words, this method must allocate a new array even if this list is backed by an array
+
+
+
+
+
+
+
+```
