@@ -299,7 +299,7 @@ private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8;	//因此，某�
  */
 public boolean add( E e )
 {
-    throw new UnsupportedOperationException(); // 留下個以為，為何總是拋出異常，是不是在具體的實現類里重寫了此方法 ？ 
+    throw new UnsupportedOperationException(); // 留下個疑問，為何總是拋出異常，是不是在具體的實現類里重寫了此方法 ？ 
 }	
 
 /**
