@@ -14,7 +14,7 @@ tags:
 
 > List接口包含方法:
 
-<img src="/images/Collection-List.png"  />
+<img src="/images/Collections/Collection-List.png"  />
 
 ```
 boolean contains(Object o); // (o == null ? e == null : o.equals(e)) ***(NullPointerException)if the specified element is null and this list does not permit null elements

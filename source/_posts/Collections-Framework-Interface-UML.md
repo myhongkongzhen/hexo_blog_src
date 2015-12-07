@@ -10,4 +10,4 @@ tags:
 
 <!--more-->  
 
-<img src="/images/Collection_uml.png"  />
+<img src="/images/Collections/Collection_uml.png"  />
