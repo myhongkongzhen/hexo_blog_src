@@ -1,5 +1,6 @@
 title: Java Platform Standard Edition 7 Documentation 總覽
 date: 2015-11-24 14:42:09
+categories: 技術
 tags:
 - JAVA
 - JDK1.7

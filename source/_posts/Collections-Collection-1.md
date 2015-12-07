@@ -1,5 +1,6 @@
 title: Collections -- Collection -- (四) 
 date: 2015-12-01 14:46:35
+categories: 技術
 tags: 
 - JAVA
 - JDK1.7

@@ -1,5 +1,6 @@
 title: Collections Framework Interface UML -- (三)
 date: 2015-12-01 12:03:10
+categories: 技術
 tags: 
 - JAVA
 - JDK1.7

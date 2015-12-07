@@ -1,5 +1,6 @@
 title: Collections Framework Overview -- (一) 
 date: 2015-11-25 11:40:13
+categories: 技術
 tags:
  - JAVA
  - JDK1.7

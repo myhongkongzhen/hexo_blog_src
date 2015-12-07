@@ -1,5 +1,6 @@
 title: Outline of the Collection Framework -- (二) 
 date: 2015-11-30 12:23:26
+categories: 技術
 tags:
  - JAVA
  - JDK1.7

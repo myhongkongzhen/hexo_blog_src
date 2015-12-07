@@ -27,8 +27,8 @@ since: 2015
 # Remove leading slashes ( "/archives" -> "archives" )
 menu:
   home: /
-  #categories: /categories
   archives: /archives
+  categories: /categories
   tags: /tags
   about: /about
   #commonweal: /404.html

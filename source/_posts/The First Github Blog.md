@@ -1,5 +1,6 @@
 title: 博文搬家GitHub
 date: 2015-11-20 15:13:19
+categories: 其他 
 tags: 
 - other
 - backup
