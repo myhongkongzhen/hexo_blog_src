@@ -1,4 +1,4 @@
-title: Collectionsr -- AbstractCollection -- (六) 
+title: Collections -- AbstractCollection -- (六) 
 date: 2015-12-07 12:08:05
 categories: 技術
 tags: 
