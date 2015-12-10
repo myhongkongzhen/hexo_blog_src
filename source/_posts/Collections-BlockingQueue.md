@@ -1,0 +1,19 @@
+title: Collections -- BlockingQueue -- (十一)
+date: 2015-12-10 14:53:03
+categories: 技術
+tags: 
+- JAVA
+- JDK1.7
+---
+> 簡介：JDK 1.7 Collections 之 BlockingQueue 詳解 (八) 
+> _由於LinkedList引用了Deque,所以這一節先學習Queue接口相關_
+> 這一節主要學習集合框架中的 BlockingQueue 成員屬性、方法等具體實現
+> 相關源碼分析及詳細api文檔移路→[Collection接口https://github.com/myhongkongzhen/pro-study-jdk/](https://github.com/myhongkongzhen/pro-study-jdk/tree/master/src/main/java/z/z/w/jdk/collections)
+
+<!--more-->  
+
+#### BlockingQueue 接口
+BlockingQueue 類 UML:
+<img src="/images/Collections/Collection-BlockingQueue.png"  />
+
+實現類源碼解析:
