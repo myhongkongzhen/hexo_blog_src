@@ -13,6 +13,7 @@ tags:
 <!--more-->
 
 ### HashMap 說明:
+> This implementation provides all of the optional map operations, and permits null values and the null key.
 
 ### HashMap UML:
 <img src="/images/Collections/Collection-HashMap.png"  />
