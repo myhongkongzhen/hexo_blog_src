@@ -13,6 +13,8 @@ tags:
 <!--more-->
 
 ### LinkedHashMap 說明:
+> Iteration over the collection-views of a LinkedHashMap requires time proportional to the size of the map, regardless of its capacity.
+> Iteration over a HashMap is likely to be more expensive, requiring time proportional to its capacity
 
 ### LinkedHashMap UML:
 <img src="/images/Collections/Collection-LinkedHashMap.png"  />
