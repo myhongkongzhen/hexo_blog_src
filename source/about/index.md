@@ -5,7 +5,11 @@ title: About Me
 我，不是程序猿
 我，是軟件開發工程師
 我喜歡編程 **深入骨髓、融入骨血**
-我的職業目標:_軟件架構師_
+
+> 比起以業務為導向，以用戶行為為基礎開發的技術團隊、
+> 更加傾向於糾結變量使用int還是Integer來定義的技術團隊
+> 業務開發，底層開發沒有誰輕誰重之分，僅僅個人喜好。
+
 # 路漫漫其修遠兮、吾將上下而求索。
 
 與性別無關，做自己喜歡的事情，僅此而已。
@@ -17,3 +21,4 @@ title: About Me
 **Email **: myhongkongzhen@gmail.com 
 **GitHub**: [github.com/myhongkongzhen](https://github.com/myhongkongzhen)
 **Weibo **: [weibo.com/myhongkongzhen](http://www.weibo.com/myhongkongzhen)  
+
