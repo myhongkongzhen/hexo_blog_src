@@ -64,17 +64,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-#theme: landscape
-#theme: crisp
-#theme: yilia
-#theme: vno
-#theme: minos
-#theme: yelee
-#theme: huno
 theme: next
 #theme: zzw
-#theme: dark-tech
-#theme: styleme
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
