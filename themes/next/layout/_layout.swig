@@ -1,16 +1,25 @@
 <!doctype html>
-<html class="theme-next {% if theme.use_motion %}  use-motion {% endif %}">
+
+{% set html_class = 'theme-next ' + theme.scheme %}
+{% if theme.use_motion %}
+  {% set html_class = html_class + ' use-motion' %}
+{% endif %}
+
+<html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
+  {% include '_third-party/analytics/index.swig' %}
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="{{ config.language }}">
+<body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
 
-  {% include '_partials/old-browsers.swig' %}
-  {% include '_scripts/analytics.swig' %}
+  {% set container_class = "container " %}
+  {% if theme.sidebar.position %}
+    {% set container_class = container_class + 'sidebar-position-' + theme.sidebar.position %}
+  {% endif %}
 
-  <div class="container one-column {% block page_class %}{% endblock %}">
+  <div class="{{ container_class }} {% block page_class %}{% endblock %} ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -19,53 +28,57 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          {% block content %}{% endblock %}
+        <div class="content-wrap">
+          <div id="content" class="content">
+            {% block content %}{% endblock %}
+          </div>
+          {% include '_third-party/duoshuo-hot-articles.swig' %}
+          {% include '_partials/comments.swig' %}
         </div>
-
-        {% include '_partials/duoshuo-hot-articles.swig' %}
-        {% include '_partials/comments.swig' %}
+        {% if theme.sidebar.display !== 'remove' %}
+          {% block sidebar %}{% endblock %}
+        {% endif %}
       </div>
-
-      {% if theme.sidebar !== 'remove' %}
-        {% block sidebar %}{% endblock %}
-      {% endif %}
     </main>
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
         {% include '_partials/footer.swig' %}
+        {% include '_third-party/analytics/busuanzi-counter.swig' %}
+        {% block footer %}{% endblock %}
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    {% if not theme.sidebar.b2t %}
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        {% if theme.sidebar.scrollpercent %}
+          <span id="scrollpercent"><span>0</span>%</span>
+        {% endif %}
+      </div>
+    {% endif %}
+
   </div>
 
-  <script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery/index.js?v=2.1.3"></script>
+  {% include '_scripts/vendors.swig' %}
+  {% include '_scripts/commons.swig' %}
 
-  {# This block is used to set options before any other scripts run #}
-  {% block script_extra_before %}{% endblock %}
+  {% set scheme_script = '_scripts/schemes/' + theme.scheme | lower + '.swig' %}
+  {% include scheme_script %}
 
-  {% block comment_system %}
-    {% include '_scripts/comments/duoshuo.swig' %}
-    {% include '_scripts/comments/disqus.swig' %}
+  {% block script_extra %}
+    {% include '_scripts/pages/post-details.swig' %}
   {% endblock %}
 
-  {% include '_scripts/fancy-box.swig' %}
-  {% include '_scripts/helpers.swig' %}
-  {% include '_scripts/motion.swig' %}
+  {% include '_scripts/boostrap.swig' %}
 
-  <script type="text/javascript" src="{{ url_for(theme.vendors) }}/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  <script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  {% block script_extra %}{% endblock %}
-
-  <script type="text/javascript" src="{{ url_for(theme.js) }}/bootstrap.js"></script>
-
-  {% include '_scripts/tinysou.swig' %}
-  {% include '_scripts/mathjax.swig' %}
-  {% block comment_system %}{% endblock %}
-  {% include '_scripts/baidushare.swig' %}
-
+  {% include '_third-party/comments/index.swig' %}
+  {% include '_third-party/search/index.swig' %}
+  {% include '_third-party/analytics/lean-analytics.swig' %}
+  {% include '_third-party/seo/baidu-push.swig' %}
+  {% include '_third-party/rating.swig' %}
+  {% include '_third-party/mathjax.swig' %}
+  {% include '_third-party/scroll-cookie.swig' %}
+  {% include '_third-party/exturl.swig' %}
 </body>
 </html>
