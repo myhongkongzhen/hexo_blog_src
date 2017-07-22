@@ -1,8 +1,6 @@
 // CSS Style Guide: http://codeguide.co/#css
 
-
-
-$scheme    = hexo-config('scheme') ? hexo-config('scheme') : 'Muse';
+$scheme    = hexo-config('scheme') ? hexo-config('scheme') : 'default';
 $variables = base $scheme custom;
 $mixins    = base $scheme custom;
 
@@ -24,14 +22,56 @@ for $mixin in $mixins
 // Common Layer
 // --------------------------------------------------
 
-// Scaffolding
-@import "_common/scaffolding";
 
-// Layout
-@import "_common/outline";
+// Reset using normalize.
+@import "_common/_core/normalize";
+
+
+// Core CSS
+@import "_common/_core/scaffolding";
+@import "_common/_core/base";
+@import "_common/_core/tables";
+@import "_common/_core/helpers";
+
+
+
+// Vendors
+@import "_common/_vendor/highlight/highlight";
+
+
+// Sections
+@import "_common/_section/layout";
+@import "_common/_section/header";
+@import "_common/_section/body";
+@import "_common/_section/sidebar";
+@import "_common/_section/footer";
+@import "_common/_section/media";
+
 
 // Components
-@import "_common/components";
+@import "_common/_component/blockquote-center";
+@import "_common/_component/buttons";
+@import "_common/_component/posts";
+@import "_common/_component/posts-expand";
+@import "_common/_component/posts-collapse";
+@import "_common/_component/posts-type";
+@import "_common/_component/pagination";
+@import "_common/_component/comments";
+@import "_common/_component/tag-cloud";
+@import "_common/_component/gallery";
+@import "_common/_component/group-pictures";
+@import "_common/_component/back-to-top";
+@import "_common/_component/duoshuo";
+@import "_common/_component/jiathis";
+
+
+
+// Page specific styles
+@import "_common/_page/home";
+@import "_common/_page/archive";
+@import "_common/_page/post-detail";
+@import "_common/_page/categories";
+
 
 
 // Schemes Layer
@@ -43,3 +83,38 @@ for $mixin in $mixins
 // Custom Layer
 // --------------------------------------------------
 @import "_custom/custom";
+
+
+
+.copyright_init {
+  width: 85%;
+  margin: 4em auto;
+  max-width: 56em;
+  word-break: break-all;
+  font-size: 12px;
+  background: rgba(255, 255, 255, .4)
+  border: 1px solid lightgray;
+  padding: 1em;
+
+  span {
+    color: #B5B5B5;
+    font-weight: bold;
+    margin-right: 1em;
+  }
+  a {
+    color: gray;
+    &:hover {
+      font-weight: bold;
+      color: #EC7B28;
+      text-decoration: underline;
+    }
+  }
+  fa-creative-commons:before {
+    content: "\f25e";
+  }
+}
+
+.copyright_init p {
+  margin: 0px;
+  margin-left: 1.8em;
+};
