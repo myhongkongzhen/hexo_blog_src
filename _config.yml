@@ -1,5 +1,5 @@
 # Hexo Configuration
-## Docs: http://hexo.io/docs/configuration.html
+## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
@@ -53,7 +53,7 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: MMM D YYYY
+date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
 # Pagination
@@ -62,21 +62,19 @@ per_page: 20
 pagination_dir: page
 
 # Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
 theme: next
-#theme: zzw
 
 # Deployment
-## Docs: http://hexo.io/docs/deployment.html
+## Docs: https://hexo.io/docs/deployment.html
 deploy:
     type: git
-    repository: git@github.com:myhongkongzhen/myhongkongzhen.github.io.git
+    repository: https://github.com/myhongkongzhen/myhongkongzhen.github.io.git
     branch: master
 
 baidu_analytics: a53f74323c99608e344f6cc77c434d62
 
 google_analytics: UA-70751910-1
 
-
-
+ 
