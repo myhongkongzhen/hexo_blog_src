@@ -7,4 +7,4 @@ tags:
 ---
 > 未完
 
-<img src="/images/Collections/Collection.png"  />
+<img src="/images/JDK/Collections/Collection.png"  />

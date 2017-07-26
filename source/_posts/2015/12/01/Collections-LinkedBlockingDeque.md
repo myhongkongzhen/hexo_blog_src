@@ -28,7 +28,7 @@ private final Condition notFull = lock.newCondition();
 ```
 
 ### LinkedBlockingDeque UML:
-<img src="/images/Collections/Collection-LinkedBlockingDeque.png"  />
+<img src="/images/JDK/Collections/Collection-LinkedBlockingDeque.png"  />
 
 ### LinkedBlockingDeque 源碼解析:
 ```

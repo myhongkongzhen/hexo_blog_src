@@ -24,7 +24,7 @@ final class ListItr extends Itr implements ListIterator<E> { ... }
 ```
 
 ### Vector UML:
-<img src="/images/Collections/Collection-Vector.png"  />
+<img src="/images/JDK/Collections/Collection-Vector.png"  />
 
 ### Vector 源碼解析:
 ```

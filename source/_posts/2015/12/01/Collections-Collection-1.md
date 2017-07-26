@@ -22,7 +22,7 @@ Iterator接口中的方法命名具有更好的語義定義.
 
 > Collection接口包含方法:
 
-<img src="/images/Collections/Collection-functions.png"  />
+<img src="/images/JDK/Collections/Collection-functions.png"  />
 
 ```
 int size(); //集合元素大小,最大返回Integer.MAX_VALUE

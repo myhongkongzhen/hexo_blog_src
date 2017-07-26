@@ -22,7 +22,7 @@ public boolean addAll(int index, Collection<? extends E> c) { ... }
 ```
 
 AbstractList類UML:
-<img src="/images/Collections/Collection-AbstractSequentialList.png"  />
+<img src="/images/JDK/Collections/Collection-AbstractSequentialList.png"  />
 
 實現類源碼解析:
 ```

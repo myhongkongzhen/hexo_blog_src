@@ -15,7 +15,7 @@ tags:
 > All elements inserted into a sorted set must implement the Comparable interface
 
 ### SortedSet UML:
-<img src="/images/Collections/Collection-SortedSet.png"  />
+<img src="/images/JDK/Collections/Collection-SortedSet.png"  />
 
 ### SortedSet 源碼解析:
 ```

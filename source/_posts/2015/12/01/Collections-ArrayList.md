@@ -53,7 +53,7 @@ private void readObject(java.io.ObjectInputStream s){ ... }
 ```
 
 ArrayList類UML:
-<img src="/images/Collections/Collection-ArrayList.png"  />
+<img src="/images/JDK/Collections/Collection-ArrayList.png"  />
 
 實現類源碼解析:
 ```

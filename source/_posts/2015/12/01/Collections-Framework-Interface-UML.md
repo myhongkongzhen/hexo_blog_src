@@ -11,4 +11,4 @@ tags:
 
 <!--more-->  
 
-<img src="/images/Collections/Collection_uml.png"  />
+<img src="/images/JDK/Collections/Collection_uml.png"  />

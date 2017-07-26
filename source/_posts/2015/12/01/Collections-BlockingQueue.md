@@ -19,7 +19,7 @@ tags:
 </table>
 
 ### BlockingQueue UML:
-<img src="/images/Collections/Collection-BlockingQueue.png"  />
+<img src="/images/JDK/Collections/Collection-BlockingQueue.png"  />
 
 ### BlockingQueue 源碼解析:
 ```

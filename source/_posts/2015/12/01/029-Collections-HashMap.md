@@ -20,7 +20,7 @@ tags:
 ```
 
 ### HashMap UML:
-<img src="/images/Collections/Collection-HashMap.png"  />
+<img src="/images/JDK/Collections/Collection-HashMap.png"  />
 
 ### HashMap 源碼解析:
 ```

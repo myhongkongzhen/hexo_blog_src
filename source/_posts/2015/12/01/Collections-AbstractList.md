@@ -32,7 +32,7 @@ protected transient int modCount = 0; // fail-fast機制的實現：transient,�
 ```
 
 AbstractList抽象類包含方法:
-<img src="/images/Collections/Collection-AbstractList.png"  />
+<img src="/images/JDK/Collections/Collection-AbstractList.png"  />
 
 實現類源碼解析:
 ```

@@ -12,7 +12,7 @@ tags:
 <!--more-->
 
 ### LinkedHashSet UML:
-<img src="/images/Collections/Collection-LinkedHashSet.png"  />
+<img src="/images/JDK/Collections/Collection-LinkedHashSet.png"  />
 
 ### LinkedHashSet 源碼解析:
 ```

@@ -16,7 +16,7 @@ tags:
 > Like any BlockingQueue, a BlockingDeque is thread safe
 
 ### BlockingDuque UML:
-<img src="/images/Collections/Collection-BlockingDeque.png"  />
+<img src="/images/JDK/Collections/Collection-BlockingDeque.png"  />
 
 ### BlockingDuque 源碼解析:
 ```

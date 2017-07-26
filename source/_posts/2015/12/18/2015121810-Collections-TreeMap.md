@@ -19,7 +19,7 @@ tags:
 > 這章看到頭疼，大概了解一二了，不過對於紅黑樹實現還是模模糊糊，先放過這章，日後再回頭重看吧，現在腦子混混的.
 
 ### TreeMap UML:
-<img src="/images/Collections/Collection-TreeMap.png"  />
+<img src="/images/JDK/Collections/Collection-TreeMap.png"  />
 
 ### TreeMap 源碼解析:
 ```

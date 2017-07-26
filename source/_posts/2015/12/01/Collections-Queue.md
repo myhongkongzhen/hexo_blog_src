@@ -14,7 +14,7 @@ tags:
 
 #### Queue 接口
 Queue 類 UML:
-<img src="/images/Collections/Collection-Queue.png"  />
+<img src="/images/JDK/Collections/Collection-Queue.png"  />
 
 實現類源碼解析:
 ```

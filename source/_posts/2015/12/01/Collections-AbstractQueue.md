@@ -15,7 +15,7 @@ tags:
 ### AbstractQueue 說明:
 
 ### AbstractQueue UML:
-<img src="/images/Collections/Collection-AbstractQueue.png"  />
+<img src="/images/JDK/Collections/Collection-AbstractQueue.png"  />
 
 ### AbstractQueue 源碼解析:
 ```

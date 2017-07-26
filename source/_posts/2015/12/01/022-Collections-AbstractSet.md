@@ -15,7 +15,7 @@ tags:
 > 不重寫任何 AbstractCollection 類的方法，僅僅擴展 equals() 及 hashCode() 方法
 
 ### AbstractSet UML:
-<img src="/images/Collections/Collection-AbstractSet.png"  />
+<img src="/images/JDK/Collections/Collection-AbstractSet.png"  />
 
 ### AbstractSet 源碼解析:
 ```

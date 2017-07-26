@@ -23,7 +23,7 @@ tags:
 ```
 
 ### LinkedList UML:
-<img src="/images/Collections/Collection-LinkedList.png"  />
+<img src="/images/JDK/Collections/Collection-LinkedList.png"  />
 
 ### LinkedList 源碼解析:
 ```

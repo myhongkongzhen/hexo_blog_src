@@ -15,7 +15,7 @@ tags:
 ### Deque 說明:
 
 ### Deque UML:
-<img src="/images/Collections/Collection-Deque.png"  />
+<img src="/images/JDK/Collections/Collection-Deque.png"  />
 
 ### Deque 源碼解析:
 ```

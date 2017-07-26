@@ -16,7 +16,7 @@ tags:
 > 內部接口 : interface Entry<K,V> { ... }
 
 ### Map UML:
-<img src="/images/Collections/Collection-Map.png"  />
+<img src="/images/JDK/Collections/Collection-Map.png"  />
 
 ### Map 源碼解析:
 ```

@@ -16,6 +16,6 @@ tags:
 > The iterators returned by this class's iterator method are fail-fast
 
 ### TreeSet UML:
-<img src="/images/Collections/Collection-TreeSet.png"  />
+<img src="/images/JDK/Collections/Collection-TreeSet.png"  />
 
 

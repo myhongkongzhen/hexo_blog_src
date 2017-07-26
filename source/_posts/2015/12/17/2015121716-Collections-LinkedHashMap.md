@@ -20,7 +20,7 @@ private static class Entry<K,V> extends HashMap.Entry<K,V> { ... }
 ```
 
 ### LinkedHashMap UML:
-<img src="/images/Collections/Collection-LinkedHashMap.png"  />
+<img src="/images/JDK/Collections/Collection-LinkedHashMap.png"  />
 
 ### LinkedHashMap 源碼解析:
 ```

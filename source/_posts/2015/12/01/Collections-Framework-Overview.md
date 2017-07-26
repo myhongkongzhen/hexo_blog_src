@@ -276,4 +276,4 @@ tags:
   
 # [***官方API頁面***http://docs.oracle.com/javase/7/docs/technotes/guides/collections/overview.html](http://docs.oracle.com/javase/7/docs/technotes/guides/collections/overview.html)截圖:
 
-<img src="/images/2015-11-26_173951.png"  />
+<img src="/images/JDK/2015-11-26_173951.png"  />

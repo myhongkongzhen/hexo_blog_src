@@ -15,7 +15,7 @@ tags:
 > 同樣是線程安全的 synchronized 方法 實現
 
 ### Stack UML:
-<img src="/images/Collections/Collection-Stack.png"  />
+<img src="/images/JDK/Collections/Collection-Stack.png"  />
 
 ### Stack 源碼解析:
 ```

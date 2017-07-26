@@ -15,7 +15,7 @@ tags:
 >   private transient HashMap<E,Object> map;
 
 ### HashSet UML:
-<img src="/images/Collections/Collection-HashSet.png"  />
+<img src="/images/JDK/Collections/Collection-HashSet.png"  />
 
 ### HashSet 源碼解析:
 ```

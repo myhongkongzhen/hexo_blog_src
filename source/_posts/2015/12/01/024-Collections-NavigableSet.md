@@ -14,7 +14,7 @@ tags:
 ### NavigableSet 說明:
 
 ### NavigableSet UML:
-<img src="/images/Collections/Collection-NavigableSet.png"  />
+<img src="/images/JDK/Collections/Collection-NavigableSet.png"  />
 
 ### NavigableSet 源碼解析:
 ```

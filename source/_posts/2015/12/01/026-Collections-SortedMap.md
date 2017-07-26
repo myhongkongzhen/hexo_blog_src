@@ -15,7 +15,7 @@ tags:
 <!--### SortedMap 說明:-->
 
 ### SortedMap UML:
-<img src="/images/Collections/Collection-SortedMap.png"  />
+<img src="/images/JDK/Collections/Collection-SortedMap.png"  />
 
 <!--### SortedMap 源碼解析:-->
 

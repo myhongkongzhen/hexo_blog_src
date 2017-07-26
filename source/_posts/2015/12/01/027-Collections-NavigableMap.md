@@ -15,7 +15,7 @@ tags:
 <!--### NavigableMap 說明:-->
 
 ### NavigableMap UML:
-<img src="/images/Collections/Collection-NavigableMap.png"  />
+<img src="/images/JDK/Collections/Collection-NavigableMap.png"  />
 
 ### NavigableMap 源碼解析:
 ```

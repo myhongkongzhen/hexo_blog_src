@@ -19,7 +19,7 @@ tags:
 ```
 
 ### AbstractMap UML:
-<img src="/images/Collections/Collection-AbstractMap.png"  />
+<img src="/images/JDK/Collections/Collection-AbstractMap.png"  />
 
 ### AbstractMap 源碼解析:
 ```

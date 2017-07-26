@@ -14,6 +14,6 @@ tags:
 ### ConcurrentHashMap 說明:
 
 ### ConcurrentHashMap UML:
-<img src="/images/Collections/Collection-ConcurrentHashMap.jpg"  />
+<img src="/images/JDK/Collections/Collection-ConcurrentHashMap.jpg"  />
 
 ### ConcurrentHashMap 源碼解析:

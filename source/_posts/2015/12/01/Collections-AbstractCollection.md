@@ -15,7 +15,7 @@ tags:
 > 定義了最小化的一般通用的方法實現
 
 AbstractCollection抽象類包含方法:
-<img src="/images/Collections/Collection-AbstractCollection.png"  />
+<img src="/images/JDK/Collections/Collection-AbstractCollection.png"  />
 
 實現類源碼解析:
 ```

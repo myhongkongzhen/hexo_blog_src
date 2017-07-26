@@ -15,7 +15,7 @@ tags:
 > A collection that contains no duplicate elements.
 
 ### Set UML:
-<img src="/images/Collections/Collection-Set.png"  />
+<img src="/images/JDK/Collections/Collection-Set.png"  />
 
 ### Set 源碼解析:
 ```
