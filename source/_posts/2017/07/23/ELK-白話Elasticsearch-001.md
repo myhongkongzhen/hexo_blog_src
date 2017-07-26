@@ -52,10 +52,20 @@ _**搜索就是任何場景下，找尋你想要的信息，輸入一段關鍵�
 |文章|3|  
 |新聞|4|  
 <img src="/images/elasticsearch/001_什麼是全文檢索.png"  />
+<img src="/images/elasticsearch/002_倒排索引.png"  />
 
 #### 2、Lucene  
 - 簡單來說，Lucene就是一個jar包，包含了封裝好的各種建立倒排索引，以及進行搜索的代碼，包括各種算法。用java開發的時候，引入該jar包，基於路測呢滴api進行開發。  
 - 利用Lucene給已有的數據建立索引，Lucene會在本地磁盤上，組織索引的數據結構，還可以利用Lucene提供的API來針對磁盤上的索引數據，進行搜索。  
+
+#### 3、Elasticsearch  
+High performance High availability Distributed
+- Lucene is deployed on single server.
+- When we save the big data, there is not enough space on single server.
+- When we deploy lucene on more than one sever, we search the data, how do we communicate with multiple machines?
+- When one lucene server is downtime, we need how to save the data on this server?   
+> **Elasticsearch package underlying lucene.**
+
 
     
     
