@@ -5,12 +5,17 @@ date: 2017-07-29 21:25:15
 tags:
 - Elasticsearch
 ---
-> - Query string search
-> - Query DSL
-> - Query filter
-> - Full-test search
-> - Phrase search
-> - Highlight search
+> - Basic Search
+>  - Query string search
+>  - Query DSL
+>  - Query filter
+>  - Full-test search
+>  - Phrase search
+>  - Highlight search
+> - Advance Search
+>  - Group by
+>  - Avg
+>  - Sort
 
 <!--more-->
 
@@ -423,6 +428,109 @@ GET /ecommerce/product/_search
   }
 }
 ```
+
+# Aggs - group_by_tags
+------
+## Case 1.
+```json
+GET /ecommerce/product/_search
+{
+    "size" : 0,
+    "aggs" : {
+        "group_by_tags" : { "terms" : { "field" : "tags" } }
+    }
+}
+--------------------------------------------------------------
+{
+...
+"buckets": [
+        {
+          "key": "fangzhu",
+          "doc_count": 2
+        },
+        {
+          "key": "meibai",
+          "doc_count": 2
+        },
+        {
+          "key": "qingxin",
+          "doc_count": 1
+        }
+      ]
+...
+}
+```
+
+## Case 2.
+```json
+GET /ecommerce/product/_search
+{
+    "size" : 0,
+    "aggs" : {
+        "group_by_tags" : {
+            "terms" : { "field" : "tags" , "order" : { "avg_price" : "desc" } },
+            "aggs" : { "avg_price" : { "avg" : { "field" : "price" } } }
+        }
+    }
+}
+--------------------------------------------------------------
+{
+...
+"buckets": [
+        {
+          "key": "fangzhu",
+          "doc_count": 2,
+          "avg_price": {
+            "value": 27.5
+          }
+        },
+        {
+          "key": "meibai",
+          "doc_count": 2,
+          "avg_price": {
+            "value": 40
+          }
+        },
+        {
+          "key": "qingxin",
+          "doc_count": 1,
+          "avg_price": {
+            "value": 40
+          }
+        }
+      ]
+...
+}
+```
+
+## Case 3.
+```json
+GET /ecommerce/product/_search
+{
+    "size" : 0,
+    "aggs" : {
+        "group_by_price" : {
+            "range" : {
+                "field" : "price",
+                "ranges" : [
+                    { "from" : 0, "to" : 20 },
+                    { "from" : 20, "to" : 40 },
+                    { "from" : 40, "to" : 60 }
+                ]
+            },
+            "aggs" : {
+                "group_by_tags" : {
+                    "terms" : { "field" : "tags" },
+                    "aggs" : {
+                        "avg_price" : { "avg" : { "field" : "price" } }
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
 
 
 
