@@ -88,6 +88,7 @@ GET /ecommerce/product/_search
 
 ## Case two
 - paramter comes from http request.
+
 ```json
 GET /ecommerce/product/_search?q=name:yagao&sort=price:asc
 ----------------------------------------------------------
