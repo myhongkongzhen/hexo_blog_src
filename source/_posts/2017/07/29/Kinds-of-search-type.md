@@ -529,6 +529,90 @@ GET /ecommerce/product/_search
         }
     }
 }
+--------------------------------------------------------------
+{
+  "took": 8,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 4,
+    "max_score": 0,
+    "hits": []
+  },
+  "aggregations": {
+    "group_by_price": {
+      "buckets": [
+        {
+          "key": "0.0-20.0",
+          "from": 0,
+          "to": 20,
+          "doc_count": 0,
+          "group_by_tags": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": []
+          }
+        },
+        {
+          "key": "20.0-40.0",
+          "from": 20,
+          "to": 40,
+          "doc_count": 2,
+          "group_by_tags": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "fangzhu",
+                "doc_count": 2,
+                "avg_price": {
+                  "value": 27.5
+                }
+              },
+              {
+                "key": "meibai",
+                "doc_count": 1,
+                "avg_price": {
+                  "value": 30
+                }
+              }
+            ]
+          }
+        },
+        {
+          "key": "40.0-60.0",
+          "from": 40,
+          "to": 60,
+          "doc_count": 2,
+          "group_by_tags": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "meibai",
+                "doc_count": 1,
+                "avg_price": {
+                  "value": 50
+                }
+              },
+              {
+                "key": "qingxin",
+                "doc_count": 1,
+                "avg_price": {
+                  "value": 40
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
 ```
 
 
