@@ -83,7 +83,7 @@ High performance High availability Distributed
 - Shard : Lucene Index, primary shard (易於橫向擴展)
 - Replica : Copy of Shard, replica shard
     There are 10 default shard in one Index, 5 primary shard and 5 replica shard.
-    _**Note:** Replica shard and Primary shard cannot on the same server._
+    _**Note:** Replica shard and Primary shard cannot be on the same server._
 
 |ES|DB|
 |-|-|
