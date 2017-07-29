@@ -36,7 +36,11 @@ _**搜索就是任何場景下，找尋你想要的信息，輸入一段關鍵�
 
 # 全文檢索和Lucene
 ------
-#### 1、全文檢索 (倒排索引)  
+#### 1、檢索 (倒排索引)
+> 全文檢索
+> 結構化搜索
+> 數據分析
+
 ```markdown
 1 生化 危機 電影  
 2 生化 危機 海報  
@@ -50,8 +54,10 @@ _**搜索就是任何場景下，找尋你想要的信息，輸入一段關鍵�
 |電影|1|  
 |海報|2|  
 |文章|3|  
-|新聞|4|  
+|新聞|4|
+- 什麼是全文檢索
 <img src="/images/elasticsearch/001_什麼是全文檢索.png"  />
+- 倒排索引Wiki
 <img src="/images/elasticsearch/002_倒排索引.png"  />
 
 #### 2、What's Lucene ?
@@ -66,6 +72,25 @@ High performance High availability Distributed
 - When one lucene server is downtime, we need how to save the data on this server?   
 > **Elasticsearch package underlying lucene.**
 
+# Elasticsearch core idea
+-----
+- Near Realtime (NRT) : del about 1s
+- Cluster : include several Nodes
+- Node : to be join default Cluster
+- Document : the minimum unit of ES, include several fields
+- Index : include several Types / Documents
+- Type : logical classification
+- Shard : Lucene Index, primary shard (易於橫向擴展)
+- Replica : Copy of Shard, replica shard
+    There are 10 default shard in one Index, 5 primary shard and 5 replica shard.
+    _**Note:** Replica shard and Primary shard cannot on the same server._
+
+|ES|DB|
+|-|-|
+|Field|Column|
+|Document|Line|
+|Type|Table|
+|Index|Database|
 
 
 
