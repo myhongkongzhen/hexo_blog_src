@@ -16,3 +16,5 @@ tags:
 <img src="/images/Collections/Collection-BlockingQueue.png"  />
 
 ### SortedMap 源碼解析:
+
+hexo new technology "install & startup Elasticsearch"
