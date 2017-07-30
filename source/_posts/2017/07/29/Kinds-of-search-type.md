@@ -21,11 +21,11 @@ tags:
 
 # Query string search
 ------
-```json
+```bash
 GET /index/type/_search
 ```
 ## Case one
-```json
+```bash
 GET /ecommerce/product/_search
 ------------------------------
 {
@@ -94,7 +94,7 @@ GET /ecommerce/product/_search
 ## Case two
 - paramter comes from http request.
 
-```json
+```bash
 GET /ecommerce/product/_search?q=name:yagao&sort=price:asc
 ----------------------------------------------------------
 {
@@ -174,7 +174,7 @@ GET /ecommerce/product/_search?q=name:yagao&sort=price:asc
 > Query Domain Specified Language
 > Http request body: using JSON data structure
 
-```json
+```bash
 GET /ecommerce/product/_search
 {
    "query" : { "match_all" : {} }
@@ -202,7 +202,7 @@ GET /ecommerce/product/_search
 
 # Query filter
 ------
-```json
+```bash
 GET /ecommerce/product/_search
 {
     "query" : {
@@ -227,7 +227,7 @@ GET /ecommerce/product/_search
 |zhognhua|3|
 |jiajieshi|2|
 
-```json
+```bash
 GET /ecommerce/product/_search
 {
     "query" : { "match" : { "producer" : "yagao producer" } }
@@ -311,11 +311,47 @@ GET /ecommerce/product/_search
 }
 ```
 
+# Partial update
+------
+```bash
+POST /index/type/id/_update
+{
+    "doc" : {
+        "update_field" : "update field content"
+    }
+}
+```
+
+# Partial update base on groovy script
+------
+```bash
+POST test_index/test_type/11/_update
+{
+  "script": "ctx._source.num += 1"
+}
+```
+- To add file test-add-tags.groovy is in the ES path/config/script/.
+
+```bash
+POST /test_index/test_type/11/_update
+{
+    "script" : {
+        lang : "groovy",
+        file : "test-add-tags", 
+        params : {
+            "new_tags" : "tags"
+        }
+     }
+}
+-------------------------------------------
+ctx._source.tags += new_tags
+```
+
 # Phrase search (_短语搜索_)
 ------
 > To input the query key, which will be demolished to build an inverted index
 
-```json
+```bash
 GET /ecommerce/product/_search
 {
     "query" : { "match_phrase" : { "producer" : "yagao producer" } }
@@ -324,7 +360,7 @@ GET /ecommerce/product/_search
 
 # Highlight search
 ------
-```json
+```bash
 GET /ecommerce/product/_search
 {
     "query" : { "match" : { "producer" : "producer" } },
@@ -432,7 +468,7 @@ GET /ecommerce/product/_search
 # Aggs - group_by_tags
 ------
 ## Case 1.
-```json
+```bash
 GET /ecommerce/product/_search
 {
     "size" : 0,
@@ -462,7 +498,7 @@ GET /ecommerce/product/_search
 ```
 
 ## Case 2.
-```json
+```bash
 GET /ecommerce/product/_search
 {
     "size" : 0,
@@ -504,7 +540,7 @@ GET /ecommerce/product/_search
 ```
 
 ## Case 3.
-```json
+```bash
 GET /ecommerce/product/_search
 {
     "size" : 0,
