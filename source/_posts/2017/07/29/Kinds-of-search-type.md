@@ -332,19 +332,37 @@ POST test_index/test_type/11/_update
 ```
 - To add file test-add-tags.groovy is in the ES path/config/script/.
 
+<img src="/images/elasticsearch/018_groovy_02.png"  />
 ```bash
 POST /test_index/test_type/11/_update
 {
-    "script" : {
-        lang : "groovy",
-        file : "test-add-tags", 
-        params : {
-            "new_tags" : "tags"
-        }
-     }
+  "script": {
+    "lang": "groovy", 
+    "file": "test-add-tags",
+    "params": {
+      "new_tags": "tag1"
+    }
+  }
 }
 -------------------------------------------
-ctx._source.tags += new_tags
+
+1.ctx._source.tags += new_tags
+2.ctx.op = ctx._source.num == count ? 'delete' : 'none'
+```
+<img src="/images/elasticsearch/018_groovy_01.png"  />
+
+- If document is not exist, then execute to upsert initial operating
+- If document is exist, then execute to groovy script operating.
+
+```bash
+POST /test_index/test_type/11/_update
+{
+   "script" : "ctx._source.num+=1",
+   "upsert": {
+       "num": 0,
+       "tags": []
+   }
+}
 ```
 
 # Phrase search (_短语搜索_)
