@@ -17,4 +17,4 @@ tags:
 
 ### SortedMap 源碼解析:
 
-hexo new technology "install & startup Elasticsearch"
+hexo new technology "ELK_Document core idea_005"

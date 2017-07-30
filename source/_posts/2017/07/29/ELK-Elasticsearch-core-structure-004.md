@@ -25,7 +25,7 @@ tags:
 # Create index
 ------
 ## Under the single node
-```json
+```bash
 PUT /test_index
 {
     "settings" : {
