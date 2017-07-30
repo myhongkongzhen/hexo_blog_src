@@ -22,6 +22,7 @@ tags:
 
 # _version 
 ------
+## internal _version
 ```bash
 {
   "_index": "test_index",
@@ -37,3 +38,19 @@ tags:
   "created": true
 }
 ```
+```bash
+PUT /test_index/test_type/7?version=2
+{ 
+  "test_field":"test field 7.1"
+}
+```
+<img src="/images/elasticsearch/017_version_update.png"  />
+<img src="/images/elasticsearch/017_version_update_02.png"  />
+
+## external version
+> - ?version=1**&version_type=external**
+>   - es, _version=1, ?version=1 ==> update success
+>   - es, _version=1, ?version **>1** &version_type=external ==> update success
+
+
+
