@@ -52,5 +52,12 @@ PUT /test_index/test_type/7?version=2
 >   - es, _version=1, ?version=1 ==> update success
 >   - es, _version=1, ?version **>1** &version_type=external ==> update success
 
+## Partial update && Optimistic lock
+> retry strategy
+> - retry_on_conflict : retry times
+
+```bash
+POST /test_index/test_type/id/_update?retry_on_conflict=5&version=6
+```
 
 
