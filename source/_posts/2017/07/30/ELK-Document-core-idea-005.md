@@ -13,7 +13,7 @@ tags:
 
 <!--more-->
 
-```json
+```bash
 {
   "_index": "test_index",
   "_type": "test_type",

@@ -22,11 +22,11 @@ tags:
 # Query string search
 ------
 ```bash
-GET /index/type/_search
+GET /index/type/_search # all result
 ```
 ## Case one
 ```bash
-GET /ecommerce/product/_search
+GET /ecommerce/product/_search # all result
 ------------------------------
 {
   "took": 7,   // used time(ms)

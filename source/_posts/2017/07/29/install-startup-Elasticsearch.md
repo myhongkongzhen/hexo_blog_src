@@ -18,7 +18,7 @@ tags:
 <img src="/images/elasticsearch/003_install_startup_ES.png"  />
 
 ## To check if the Elasticsearch startup success. [127.0.0.1:9200](http://127.0.0.1:9200/?pretty)
-```json
+```bash
 {
   "name" : "PFS_monitor_node-1", // Node name
   "cluster_name" : "PFS_monitor_cluster", // Cluster name
@@ -41,7 +41,7 @@ tags:
 ## To use kibana to study Elasticsearch. [Kibana dev tools](http://localhost:5601/app/kibana#/dev_tools/console?_g=()
 <img src="/images/elasticsearch/005_healthcheck.png"  />
 
-```json
+```bash
 {
   "cluster_name": "PFS_monitor_cluster",
   "status": "yellow",
@@ -120,14 +120,14 @@ The document data structure of elasticsearch is JSON **基於文檔的數據結�
     
 ## Check index of cluster
 [GET _cat/indices?v](http://127.0.0.1:9200/_cat/indices?v)
-```json
+```markdown
 health status index   uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 yellow open   .kibana SCPH1iHxTwiV6naHOTRiig   1   1          1            0      3.1kb          3.1kb
 ```
 
 ## Create index
 [PUT /zzwu_index?pretty](http://127.0.0.1:9200/zzwu_index?pretty)
-```json
+```markdown
 {
   "acknowledged": true,
   "shards_acknowledged": true
@@ -140,7 +140,7 @@ yellow open   zzwu_index AdEOBWZbTvawswsr8jgA-A   5   1          0            0 
 
 ## Delete index
 [DELETE /zzwu_index?pretty](http://127.0.0.1:9200/_cat/indices?v)
-```json
+```bash
 {
   "acknowledged": true
 }
@@ -171,14 +171,14 @@ yellow open   zzwu_index AdEOBWZbTvawswsr8jgA-A   5   1          0            0 
 # Show Case
 ------
 ## Create index & type
-```json
+```bash
 PUT /index/type/id
 {
   "json data"
 }
 ```
 
-```json
+```bash
 PUT /ecommerce/product/1
 {
     "name" : "gaolujie yagao",
@@ -191,11 +191,11 @@ PUT /ecommerce/product/1
 <img src="/images/elasticsearch/008_create_index_type.png"  />
 
 ## Search document
-```json
+```bash
 GET /index/type/id
 ```
 
-```json
+```bash
 GET /ecommerce/product/2
 ```
 <img src="/images/elasticsearch/009_search_index.png"  />
@@ -203,7 +203,7 @@ GET /ecommerce/product/2
 ## Edit document
 - replace
 
-```json
+```bash
 PUT /ecommerce/product/1
 {
     "name" : "jiaqiangban gaolujie yagao",
@@ -215,18 +215,17 @@ PUT /ecommerce/product/1
 ```
 <img src="/images/elasticsearch/010_edit_replace_01.png"  />
 
-```json
+```bash
 PUT /ecommerce/product/1
 {
     "name" : "jiaqiangban gaolujie yagao"
 }
-<img src="/images/elasticsearch/010_edit_replace_02.png"  />
-
 ```
+<img src="/images/elasticsearch/010_edit_replace_02.png"  />
 
 - update
 
-```json
+```bash
 POST /ecommerce/product/1/_update
 {
   "doc": {
@@ -237,7 +236,7 @@ POST /ecommerce/product/1/_update
 <img src="/images/elasticsearch/010_edit_update_02.png"  />
 
 ## Delete document
-```json
+```bash
 DELETE /ecommerce/product/1
 ----------------------------
 {
