@@ -3,18 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
+title: あなたがいる 、それだけでも
+subtitle: Z_Z.W
+description: JAVA、C、C++ 技術、生活感悟
+author: Z_Z.W
+language: en
 timezone:
+email: myhongkongzhen@gmail.com
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://myhongkongzhen.github.io/
 root: /
-permalink: :year/:month/:day/:title/
+permalink: archives/:category/:year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
@@ -28,7 +29,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year/:month/:day/:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
@@ -72,9 +73,17 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repository: git@github.com:myhongkongzhen/myhongkongzhen.github.io.git
+  branch: master
+
+#baidu_analytics: a53f74323c99608e344f6cc77c434d62
+
+#google_analytics: UA-70751910-1
+
+
