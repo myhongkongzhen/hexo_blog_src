@@ -74,7 +74,7 @@ High performance High availability Distributed
 
 # Elasticsearch core idea
 -----
-- Near Realtime (NRT) : del about 1s
+- Near Realtime (NRT) : delay about 1s
 - Cluster : include several Nodes
 - Node : to be join default Cluster
 - Document : the minimum unit of ES, include several fields
