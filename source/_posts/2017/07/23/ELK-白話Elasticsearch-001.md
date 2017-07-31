@@ -88,7 +88,7 @@ High performance High availability Distributed
 |ES|DB|
 |-|-|
 |Field|Column|
-|Document|Line|
+|Document|Row|
 |Type|Table|
 |Index|Database|
 

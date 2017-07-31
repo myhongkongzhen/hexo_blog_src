@@ -483,7 +483,7 @@ GET /ecommerce/product/_search
 }
 ```
 
-# Aggs - group_by_tags
+# Aggs 
 ------
 ## Case 1.
 ```bash

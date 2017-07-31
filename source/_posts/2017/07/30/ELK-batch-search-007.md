@@ -5,9 +5,9 @@ date: 2017-07-30 22:23:16
 tags:
 - Elasticsearch
 ---
-> Bath search 
-> - mget
-> - 
+> - Batch query
+>  - mget
+>  - 
 
 <!--more-->
 
@@ -52,8 +52,6 @@ GET /test_index/test_type/_mget # the same index & type
    "ids": [1, 2]
 }
 ```
-
-
 
 
 
