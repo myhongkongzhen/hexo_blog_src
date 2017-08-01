@@ -54,7 +54,7 @@ index_generator:
   order_by: -date
   
 # Category & Tag
-default_category: uncategorized
+default_category: technology
 category_map:
 tag_map:
 
@@ -87,4 +87,27 @@ deploy:
 #google_analytics: UA-70751910-1
 
 #disqus_shortname: myhongkongzhen
+
+# RSS订阅支持
+plugin:
+- hexo-generator-feed
+# Feed Atom
+feed:
+type: atom
+path: atom.xml
+limit: 20
+
+# JiaThis 作为内容分享服务
+jiathis: true
+
+
+# 搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+
+
 
