@@ -15,7 +15,7 @@ email: myhongkongzhen@gmail.com
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://myhongkongzhen.github.io/
 root: /
-permalink: archives/:category/:year/:month/:day/:title/
+permalink: archives/:category/:year/:month/:day/:title.html
 permalink_defaults:
 
 # Directory
