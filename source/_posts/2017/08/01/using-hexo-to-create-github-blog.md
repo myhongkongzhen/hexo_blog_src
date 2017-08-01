@@ -1,5 +1,5 @@
 ---
-title: using hexo to create github blog
+title: Using hexo to create github blog
 categories:
   - technology
 tags: [hexo, github]
