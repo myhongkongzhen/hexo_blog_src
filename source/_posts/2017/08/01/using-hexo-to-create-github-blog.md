@@ -45,7 +45,7 @@ git merge upstream/master
 
 #----------------------------------------------------
 git tag
-git co -b v5.1.1
+git co -b mystyle v5.1.1
 #005_change_release_version_next
 
 #----------------------------------------------------
