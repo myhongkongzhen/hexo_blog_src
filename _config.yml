@@ -97,8 +97,7 @@ feed:
 type: atom
 path: atom.xml
 limit: 20
-# JiaThis 作为内容分享服务
-jiathis: true
+
 # 搜索
 search:
   path: search.xml
