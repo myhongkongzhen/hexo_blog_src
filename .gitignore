@@ -4,20 +4,8 @@ db.json
 *.log
 node_modules/
 public/
-#.deploy*/
 .idea/
 *.iml
 debug.log
-
-
-
-
-
-
-
-
-
-
-
 
 
