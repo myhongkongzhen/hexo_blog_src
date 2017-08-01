@@ -1,9 +1,8 @@
 ---
 title: {{ title }}
 date: {{ date }}
-categories: technology
-tags:
-
+categories: [technology] 
+tags: []
 ---
 > 
 

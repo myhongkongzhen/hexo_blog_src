@@ -98,3 +98,10 @@ package uml_class_composition <<Frame>>{
 @enduml
 ```
 IMG download => [uml_class_composition](/images/elasticsearch/021_uml_class_04.png)
+
+
+
+
+
+
+
