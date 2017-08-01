@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ¤¢¤Ê¤¿¤¬¤¤¤ë ¡¢¤½¤ì¤À¤±¤Ç¤â
+title: ã‚ãªãŸãŒã„ã‚‹ ã€ãã‚Œã ã‘ã§ã‚‚
 subtitle: Z_Z.W
-description: TAKARAZUKA¡¢JAVA¡¢C¡¢C++¡¢LIFE
+description: TAKARAZUKAã€JAVAã€Cã€C++ã€LIFE
 author: Z_Z.W
 language: en
 timezone:
@@ -89,7 +89,7 @@ deploy:
 #baidu_analytics: a53f74323c99608e344f6cc77c434d62
 #google_analytics: UA-70751910-1
 #disqus_shortname: myhongkongzhen
-# RSS¶©ÔÄÖ§³Ö
+# RSSè®¢é˜…æ”¯æŒ
 plugin:
 - hexo-generator-feed
 # Feed Atom
@@ -97,9 +97,9 @@ feed:
 type: atom
 path: atom.xml
 limit: 20
-# JiaThis ×÷ÎªÄÚÈİ·ÖÏí·şÎñ
+# JiaThis ä½œä¸ºå†…å®¹åˆ†äº«æœåŠ¡
 jiathis: true
-# ËÑË÷
+# æœç´¢
 search:
   path: search.xml
   field: post
