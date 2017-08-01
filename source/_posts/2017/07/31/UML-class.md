@@ -103,5 +103,3 @@ IMG download => [uml_class_composition](/images/elasticsearch/021_uml_class_04.p
 
 
 
-
-
