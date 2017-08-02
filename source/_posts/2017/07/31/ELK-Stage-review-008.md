@@ -5,7 +5,11 @@ date: 2017-07-31 17:26:42
 tags:
 - Elasticsearch
 ---
-> Stage review
+> Stage review  
+> - _Distributed Document Store_
+> - **文檔數據存儲系統**
+> - 操作JSON文檔類型數據
+>   - NOSQL存儲系統
 
 <!--more-->
 
