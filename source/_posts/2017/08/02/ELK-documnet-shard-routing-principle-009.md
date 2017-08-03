@@ -17,3 +17,7 @@ date: 2017-08-02 23:50:27
         - routing = routing id , ex : document_id ( default num , _you can be manually specified_. )
         - hash ( routing) = hash ( document_id ) : hash code
         - mod ( num of primary shards ) -> result is always from **zero** to [ **number_of_primary_shards - 1** ]
+
+
+
+- _Continue_
