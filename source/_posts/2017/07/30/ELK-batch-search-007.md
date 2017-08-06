@@ -194,6 +194,22 @@ POST /_bulk
 - `1000 ~ 5000` 
 - `5 ~ 15M`
 
+## bulk api json spatial format
+- one data one line, use '\n'
+	- json spatial format VS json format
+	```json
+	{"action": {"meta"}}
+    {"data"}
+    {"action": {"meta"}}
+    {"data"}
+ // ---------------------------- 
+        [{
+          "action": { },
+          "data": { }
+        }]
+	```
+	- **Do not need to translate to jsonArray object**
+
 
 
 
